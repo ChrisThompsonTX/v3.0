@@ -72,7 +72,7 @@ function DropdownMenu() {
       <a href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
         <span className="icon-button">{props.leftIcon}</span>
         {props.children}
-        <span className="icon-right">{props.rightIcon}</span>
+        <span className="icon-button icon-right">{props.rightIcon}</span>
       </a>
     );
   }
@@ -112,7 +112,6 @@ function DropdownMenu() {
         onEnter={calcHeight}>
         <div className="menu">
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-            <h2>My Tutorial</h2>
           </DropdownItem>
           <DropdownItem leftIcon={<BoltIcon />}>HTML</DropdownItem>
           <DropdownItem leftIcon={<BoltIcon />}>CSS</DropdownItem>
@@ -131,10 +130,10 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
             <h2>Animals</h2>
           </DropdownItem>
-          <DropdownItem leftIcon="🦘">Chicken Tinder</DropdownItem>
-          <DropdownItem leftIcon="🐸">Tappd</DropdownItem>
-          <DropdownItem leftIcon="🦋">Wiki-Clicker</DropdownItem>
-          <DropdownItem leftIcon="🦔">Amity-Lianne</DropdownItem>
+          <DropdownItem leftIcon="🐔">Chicken Tinder</DropdownItem>
+          <DropdownItem leftIcon="🍻">Tappd</DropdownItem>
+          <DropdownItem leftIcon="🔍">Wiki-Clicker</DropdownItem>
+          <DropdownItem leftIcon="🎨">Amity-Lianne</DropdownItem>
         </div>
       </CSSTransition>
     </div>
