@@ -49,6 +49,8 @@ a {
   background-color: var(--bg);
   padding: 0 1rem;
   border-bottom: var(--border);
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar-nav {

@@ -26,6 +26,14 @@ function Navbar(props) {
   return (
     <nav className="navbar">
       <ul className="navbar-nav">{props.children}</ul>
+      <div className="navbar__links">
+        <a href="https://www.linkedin.com/in/chris-thompson-832015179/">
+          <i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ChrisThompsonTX">
+          <i class="fab fa-github"></i></a>
+        <a href="https://angel.co/u/christopher-thio-thompson">
+          <i class="fab fa-angellist"></i></a>
+      </div>
     </nav>
   );
 }
