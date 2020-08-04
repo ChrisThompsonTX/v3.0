@@ -70,10 +70,10 @@ function DropdownMenu() {
                 <div className="menu">
                     <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
                     </DropdownItem>
-                    <DropdownItem leftIcon={<BoltIcon />}>HTML</DropdownItem>
-                    <DropdownItem leftIcon={<BoltIcon />}>CSS</DropdownItem>
-                    <DropdownItem leftIcon={<BoltIcon />}>JavaScript</DropdownItem>
-                    <DropdownItem leftIcon={<BoltIcon />}>Awesome!</DropdownItem>
+                    <DropdownItem leftIcon={<BoltIcon />}>Javascript</DropdownItem>
+                    <DropdownItem leftIcon={<BoltIcon />}>React</DropdownItem>
+                    <DropdownItem leftIcon={<BoltIcon />}>Ruby</DropdownItem>
+                    <DropdownItem leftIcon={<BoltIcon />}>SQL</DropdownItem>
                 </div>
             </CSSTransition>
 
