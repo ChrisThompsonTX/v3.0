@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { CSSTransition } from 'react-transition-group';
+import React, { useState } from 'react';
 import './index.css';
-import DropdownMenu from './components/DropdownMenu';
-import { ReactComponent as ArrowIcon } from './icons/arrow.svg';
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
+
+import DropdownMenu from './components/DropdownMenu';
+import Clock from './components/Clock'
 
 function App() {
   return (
@@ -28,11 +28,12 @@ function Navbar(props) {
       <ul className="navbar-nav">{props.children}</ul>
       <div className="navbar__links">
         <a href="https://www.linkedin.com/in/chris-thompson-832015179/">
-          <i class="fab fa-linkedin"></i></a>
+          <i className="fab fa-linkedin"></i></a>
         <a href="https://github.com/ChrisThompsonTX">
-          <i class="fab fa-github"></i></a>
+          <i className="fab fa-github"></i></a>
         <a href="https://angel.co/u/christopher-thio-thompson">
-          <i class="fab fa-angellist"></i></a>
+          <i className="fab fa-angellist"></i></a>
+        <Clock />
       </div>
     </nav>
   );
@@ -43,9 +44,12 @@ function NavItem(props) {
 
   return (
     <li className="nav-item">
-      <a href="#" 
+      <a href="/" 
         className={open ? "active icon-button": "icon-button"} 
-        onClick={() => setOpen(!open)}>
+        onClick={(e) => {
+          e.preventDefault();
+          setOpen(!open)
+          }}>
         {props.title}
       </a>
 
