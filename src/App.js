@@ -7,18 +7,18 @@ import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
 function App() {
   return (
-    <Navbar>
-      <NavItem title={<BoltIcon />} />
-      <NavItem title={<h1>Chris Thompson</h1>}>
-        <DropdownMenu />
-      </NavItem>
-      <NavItem title="View" />
-
-      <NavItem title="Contact">
-        <DropdownMenu />
-      </NavItem>
-      
-    </Navbar>
+    <div>
+      <Navbar>
+        <NavItem title={<BoltIcon />} />
+        <NavItem title={<h1>Chris Thompson</h1>}>
+          <DropdownMenu />
+        </NavItem>
+        <NavItem title="View" />
+        <NavItem title="Contact">
+          <DropdownMenu />
+        </NavItem>
+      </Navbar>
+    </div>
   );
 }
 

@@ -45,13 +45,13 @@ function DropdownMenu() {
                         rightIcon={<ChevronIcon />}
                         goToMenu="settings">
                         Notable Skills
-        </DropdownItem>
+                    </DropdownItem>
                     <DropdownItem
                         leftIcon="🦧"
                         rightIcon={<ChevronIcon />}
                         goToMenu="animals">
                         Recent Projects
-        </DropdownItem>
+                        </DropdownItem>
 
                 </div>
             </CSSTransition>
