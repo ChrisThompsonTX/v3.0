@@ -53,7 +53,7 @@ function DropdownMenu() {
                         Notable Skills
                     </DropdownItem>
                     <DropdownItem
-                        leftIcon="🦧"
+                        leftIcon={<i class="fas fa-folder-open"></i>}
                         rightIcon={<ChevronIcon />}
                         goToMenu="animals">
                         Recent Projects
@@ -71,10 +71,16 @@ function DropdownMenu() {
                 <div className="menu">
                     <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
                     </DropdownItem>
-                    <DropdownItem leftIcon={<BoltIcon />}>Javascript</DropdownItem>
-                    <DropdownItem leftIcon={<BoltIcon />}>React</DropdownItem>
-                    <DropdownItem leftIcon={<BoltIcon />}>Ruby</DropdownItem>
-                    <DropdownItem leftIcon={<BoltIcon />}>SQL</DropdownItem>
+                    <DropdownItem leftIcon={<i class="fab fa-js-square"></i>}>Javascript</DropdownItem>
+                    <DropdownItem leftIcon={<i class="fab fa-react"></i>}>React/Redux</DropdownItem>
+                    <DropdownItem leftIcon={<i class="fas fa-gem"></i>}>Ruby</DropdownItem>
+                    <DropdownItem leftIcon={<i class="fab fa-python"></i>}>Python</DropdownItem>
+                    <DropdownItem leftIcon={<i class="fas fa-database"></i>}>SQL/noSQL databases</DropdownItem>
+                    <DropdownItem leftIcon={<BoltIcon />}>jQuery</DropdownItem>
+                    <DropdownItem leftIcon={<i class="fab fa-node"></i>}>Node</DropdownItem>
+                    <DropdownItem leftIcon={<i class="fas fa-database"></i>}>MongoDB</DropdownItem>
+                    <DropdownItem leftIcon={<BoltIcon />}>Express</DropdownItem>
+                    <DropdownItem leftIcon={<i class="fab fa-aws"></i>}>AWS</DropdownItem>
                 </div>
             </CSSTransition>
 

@@ -1,0 +1,11 @@
+.project {
+    cursor: pointer;
+    max-width: 5vw;
+    max-height: 5vw;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -9,6 +9,7 @@ body {
   background-image: url("https://i.pinimg.com/originals/1a/3e/73/1a3e733334ec8948b0328af4e5b7288a.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 img {
@@ -102,4 +103,8 @@ a {
   fill: var(--text-color);
   width: 20px;
   height: 20px;
+}
+
+.desktop {
+  height: 100vh;
 }

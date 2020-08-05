@@ -4,6 +4,7 @@ import './index.css';
 import DropdownMenu from './components/DropdownMenu';
 import Clock from './components/Clock'
 import { OSDock } from './components/OSDock'
+import Icon from './components/Icon'
 
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
@@ -20,6 +21,10 @@ function App() {
         <NavItem title="Contact">
         </NavItem>
       </Navbar>
+      <div className="desktop" >
+        <Icon />
+
+      </div>
       <OSDock />
     </div>
   );
