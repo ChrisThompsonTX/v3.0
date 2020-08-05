@@ -28,7 +28,8 @@
 
 .menu-item:hover {
   background-color: rgb(39, 39, 202);
-}
+  filter: brightness(1.2);
+}   
 
 .icon-right {
   margin-left: auto;
