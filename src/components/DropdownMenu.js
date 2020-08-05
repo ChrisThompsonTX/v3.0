@@ -85,7 +85,7 @@ function DropdownMenu() {
                 onEnter={calcHeight}>
                 <div className="menu">
                     <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-                        <h2>Animals</h2>
+                        <h2>Back</h2>
                     </DropdownItem>
                     <DropdownItem leftIcon="🐔">Chicken Tinder</DropdownItem>
                     <DropdownItem leftIcon="🍻">Tappd</DropdownItem>

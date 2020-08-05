@@ -22,16 +22,28 @@
   border-top-right-radius: var(--border-radius);
   border-top-left-radius: var(--border-radius);
   opacity: .8;
+  border: 1px solid darkgray;
+  border-bottom: none;
+}
+
+.dock__icon {
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .dock__icon h1 {
     font-size: .5rem;
     bottom: 70px;
     background-color: var(--bg);
-    opacity: .8;
+    opacity: .5;
     color: white;
     border-radius: var(--border-radius);
     padding: 4px;
+}
+
+.dock__icon:hover h1 {
+    opacity: 1;
+    transition: all .5s;
 }
 
 .dock__icon img {
