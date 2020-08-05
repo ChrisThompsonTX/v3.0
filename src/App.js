@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './index.css';
-import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
 import DropdownMenu from './components/DropdownMenu';
 import Clock from './components/Clock'
+import { OSDock } from './components/OSDock'
+
+import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
 function App() {
+
   return (
     <div>
       <Navbar>
@@ -18,6 +21,7 @@ function App() {
           <DropdownMenu />
         </NavItem>
       </Navbar>
+      <OSDock />
     </div>
   );
 }
@@ -33,6 +37,7 @@ function Navbar(props) {
           <i className="fab fa-github"></i></a>
         <a href="https://angel.co/u/christopher-thio-thompson">
           <i className="fab fa-angellist"></i></a>
+        <i className="fas fa-battery-full"></i>
         <Clock />
       </div>
     </nav>

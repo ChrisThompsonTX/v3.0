@@ -1,9 +1,17 @@
-import React from 'react'
-import './clock.css'
+import React, { useEffect, useState } from 'react'
+import './clock.css';
 
 function Clock() {
+    const [time, setTime] = useState(null); 
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            startTime();
+        }, 1000);
+        return () => clearInterval(interval);
+    }, []);
 
+    function startTime() {
         let today = new Date();
         let d = today.getUTCDay();
         let h = today.getHours();
@@ -12,13 +20,15 @@ function Clock() {
         let hour = (h > 12 ? h - 12 : h)
         let timeOfDay = (h > 12 ? "PM" : "AM")
         let mins = (m > 9 ? m : `0${m}`)
-        let innerHTML = `${days[d - 1]}  ${hour}:${mins} ${timeOfDay}`
+        setTime(`${days[d]}  ${hour}:${mins} ${timeOfDay}`);
+    }
 
     return (
         <div className="clock">
-            {innerHTML}
+            {time}
         </div>
     )
+
 }
 
-export default Clock
+export default Clock;

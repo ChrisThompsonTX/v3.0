@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/1a/3e/73/1a3e733334ec8948b0328af4e5b7288a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
@@ -74,8 +77,9 @@ a {
   align-items: center;
 }
 
-.navbar__links a {
+.navbar__links i {
   padding-right: 10px;
+  color: white;
 }
 
 .icon-button {
