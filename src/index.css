@@ -91,7 +91,7 @@ a {
 }
 
 .active {
-  /* background-color: rgb(39, 39, 202); */
+  background-color: rgb(39, 39, 202);
 }
 
 .icon-button:hover {
@@ -102,81 +102,4 @@ a {
   fill: var(--text-color);
   width: 20px;
   height: 20px;
-}
-
-/* Dropdown Menu */
-
-.dropdown {
-  position: absolute;
-  top: 30px;
-  left: 188px;
-  width: 300px;
-  transform: translateX(-45%);
-  background-color: var(--bg);
-  border: var(--border);
-  opacity: .8;
-  border-top: none;
-  border-bottom-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-  padding: 1rem 0;
-  overflow: hidden;
-  transition: height var(--speed) ease;
-}
-
-.menu-item {
-  height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border-radius: var(--border-radius);
-  transition: background var(--speed);
-  padding: 0.2rem;
-}
-
-.menu-item:hover {
-  background-color: rgb(39, 39, 202);
-}
-
-.icon-right {
-  margin-left: auto;
-}
-
-.menu {
-  width: 100%;
-}
-
-.menu-primary-enter {
-  position: absolute;
-  transform: translateX(-110%);
-}
-
-.menu-primary-enter-active {
-  transform: translateX(0%);
-  transition: all var(--speed) ease;
-}
-
-.menu-primary-exit {
-  position: absolute;
-}
-
-.menu-primary-exit-active {
-  transform: translateX(-110%);
-  transition: all var(--speed) ease;
-}
-
-.menu-secondary-enter {
-  transform: translateX(110%);
-}
-
-.menu-secondary-enter-active {
-  transform: translateX(0%);
-  transition: all var(--speed) ease;
-}
-
-.menu-secondary-exit {
-}
-
-.menu-secondary-exit-active {
-  transform: translateX(110%);
-  transition: all var(--speed) ease;
 }

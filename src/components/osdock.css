@@ -1,14 +1,4 @@
 
-:root {
-  --bg: #242526;
-  --bg-accent: #484a4d;
-  --text-color: #dadce1;
-  --nav-size: 30px;
-  --border: 1px solid #474a4d;
-  --border-radius: 4px;
-  --speed: 500ms;
-}
-
 .dock {
   position: absolute;
   bottom: 0;

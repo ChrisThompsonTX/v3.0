@@ -18,7 +18,6 @@ function App() {
         </NavItem>
         <NavItem title="View" />
         <NavItem title="Contact">
-          <DropdownMenu />
         </NavItem>
       </Navbar>
       <OSDock />
