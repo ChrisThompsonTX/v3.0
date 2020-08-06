@@ -10,8 +10,14 @@
     align-items: center;
     color: white;
     font-weight: 600;
+    width: fit-content;
 }
 
 .icon a {
     color: dodgerblue;
+    text-decoration: underline;
+}
+
+.project__links {
+    display: flex;
 }
