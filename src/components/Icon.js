@@ -5,12 +5,19 @@ import './icon.css';
 
 class Icon extends React.Component {
 
+    constructor(props) {
+        super(props)
+    }
+
     render() {
+
+        let { defaultPosition, name, image, demo, github } = this.props
+
         return (
             <Draggable
                 axis="both"
                 handle=".handle"
-                defaultPosition={{ x: 5, y: 5 }}
+                defaultPosition={defaultPosition}
                 position={null}
                 grid={[1, 1]}
                 scale={1}
@@ -22,15 +29,16 @@ class Icon extends React.Component {
                         <img 
                             className="project" 
                             alt="project" 
-                            src="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
+                            src={image}
                             draggable="false"
+                            onDoubleClick={null}
                         />
                     </div>
-                    <div> Chicken Tinder </div>
+                    <div> {name}</div>
                     <div className="project__links">
-                        <a href="https://www.linkedin.com/in/chris-thompson-832015179/">Demo </a>
+                        <a href={demo}>Demo </a>
                         | 
-                        <a href="https://www.linkedin.com/in/chris-thompson-832015179/"> GitHub</a>
+                        <a href={github}> GitHub</a>
                     </div>
                 </div>
             </Draggable>

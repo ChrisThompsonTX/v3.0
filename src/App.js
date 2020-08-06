@@ -22,7 +22,22 @@ function App() {
         </NavItem>
       </Navbar>
       <div className="desktop" >
-        <Icon />
+        <Icon
+          name="Chicken Tinder"
+          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
+          demo=""
+          github=""
+          defaultX={5}
+          defaultPosition={{x: 0, y: 0}}
+        />
+        <Icon
+          name="Chicken Tinder"
+          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
+          demo=""
+          github=""
+          defaultX={5}
+          defaultPosition={{x: 50, y: 50}}
+        />
 
       </div>
       <OSDock />
