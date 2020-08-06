@@ -5,6 +5,7 @@ import DropdownMenu from './components/DropdownMenu';
 import Clock from './components/Clock'
 import { OSDock } from './components/OSDock'
 import Icon from './components/Icon'
+import Window from './components/Window'
 
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
@@ -24,37 +25,33 @@ function App() {
       <div className="desktop" >
         <Icon
           name="Chicken Tinder"
-          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
-          demo=""
-          github=""
-          defaultX={5}
-          defaultPosition={{x: 20, y: 10}}
+          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Chicken+Tinder.png"
+          demo="https://lit-atoll-81167.herokuapp.com/#/"
+          github="https://github.com/hkryucr/mern-ct"
+          defaultPosition={{x: 20, y: 60}}
         />
         <Icon
           name="Tappd"
-          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
-          demo=""
-          github=""
-          defaultX={5}
-          defaultPosition={{x: 160, y: 0}}
+          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Tappd.png"
+          demo="https://tappd-ct.herokuapp.com/#/"
+          github="https://github.com/ChrisThompsonTX/Tappd"
+          defaultPosition={{x: 160, y: 50}}
         />
         <Icon
           name="WikiClicker"
           image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
-          demo=""
-          github=""
-          defaultX={5}
-          defaultPosition={{x: 290, y: -268}}
+          demo="http://christhompson.online/WikiClicker/"
+          github="https://github.com/ChrisThompsonTX/WikiClicker"
+          defaultPosition={{x: 290, y: -68}}
         />
         <Icon
-          name="Instaclone"
-          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
-          demo=""
+          name="Insta-Clone"
+          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/instagram.png"
+          demo="https://reactinstagram-c443e.web.app/"
           github=""
-          defaultX={5}
           defaultPosition={{x: 290, y: -248}}
         />
-
+      <Window />
       </div>
       <OSDock />
     </div>

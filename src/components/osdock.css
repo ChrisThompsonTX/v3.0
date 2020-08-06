@@ -29,6 +29,7 @@
     color: white;
     border-radius: var(--border-radius);
     padding: 4px;
+    text-align: center;
 }
 
 .dock__icon:hover h1 {

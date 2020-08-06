@@ -15,9 +15,21 @@
 
 .icon a {
     color: dodgerblue;
-    text-decoration: underline;
+    font-size: .5rem;
+    padding: 0 3px;
+    background-color: white;
+    border-radius: 5px;
+    max-height: fit-content;
+}
+
+.icon h1 {
+    font-size: .5rem;
+    color: black;
+    padding: 0 3px;
 }
 
 .project__links {
+    padding-top: 5px;
     display: flex;
+    justify-content: space-between;
 }
