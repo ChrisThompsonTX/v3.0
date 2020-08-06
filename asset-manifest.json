@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/v3.0/static/css/main.9b9935af.chunk.css",
+    "main.js": "/v3.0/static/js/main.bbf2c845.chunk.js",
+    "main.js.map": "/v3.0/static/js/main.bbf2c845.chunk.js.map",
+    "runtime-main.js": "/v3.0/static/js/runtime-main.a77da107.js",
+    "runtime-main.js.map": "/v3.0/static/js/runtime-main.a77da107.js.map",
+    "static/js/2.9b6257f4.chunk.js": "/v3.0/static/js/2.9b6257f4.chunk.js",
+    "static/js/2.9b6257f4.chunk.js.map": "/v3.0/static/js/2.9b6257f4.chunk.js.map",
+    "index.html": "/v3.0/index.html",
+    "precache-manifest.135bd4715e360d46c3146ea050f1cfcc.js": "/v3.0/precache-manifest.135bd4715e360d46c3146ea050f1cfcc.js",
+    "service-worker.js": "/v3.0/service-worker.js",
+    "static/css/main.9b9935af.chunk.css.map": "/v3.0/static/css/main.9b9935af.chunk.css.map",
+    "static/js/2.9b6257f4.chunk.js.LICENSE.txt": "/v3.0/static/js/2.9b6257f4.chunk.js.LICENSE.txt",
+    "static/media/arrow.48ae6434.svg": "/v3.0/static/media/arrow.48ae6434.svg",
+    "static/media/bolt.681afa2e.svg": "/v3.0/static/media/bolt.681afa2e.svg",
+    "static/media/chevron.efbb2bd6.svg": "/v3.0/static/media/chevron.efbb2bd6.svg",
+    "static/media/cog.993f0cc0.svg": "/v3.0/static/media/cog.993f0cc0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a77da107.js",
+    "static/js/2.9b6257f4.chunk.js",
+    "static/css/main.9b9935af.chunk.css",
+    "static/js/main.bbf2c845.chunk.js"
+  ]
+}
