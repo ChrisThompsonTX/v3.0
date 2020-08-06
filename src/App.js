@@ -28,15 +28,31 @@ function App() {
           demo=""
           github=""
           defaultX={5}
-          defaultPosition={{x: 0, y: 0}}
+          defaultPosition={{x: 20, y: 10}}
         />
         <Icon
-          name="Chicken Tinder"
+          name="Tappd"
           image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
           demo=""
           github=""
           defaultX={5}
-          defaultPosition={{x: 50, y: 50}}
+          defaultPosition={{x: 160, y: 0}}
+        />
+        <Icon
+          name="WikiClicker"
+          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
+          demo=""
+          github=""
+          defaultX={5}
+          defaultPosition={{x: 290, y: -268}}
+        />
+        <Icon
+          name="Instaclone"
+          image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
+          demo=""
+          github=""
+          defaultX={5}
+          defaultPosition={{x: 290, y: -248}}
         />
 
       </div>
