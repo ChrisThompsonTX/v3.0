@@ -12,14 +12,14 @@ class Window extends React.Component {
 
         // let { name,  } = this.props
         function handleClose() {
-            
+
         }
 
         return (
             <Draggable
                 axis="both"
                 handle=".handle"
-                defaultPosition={{ x: 20, y: 20 }}
+                defaultPosition={{ x: 120, y: -220 }}
                 position={null}
                 grid={[1, 1]}
                 scale={1}
@@ -30,9 +30,15 @@ class Window extends React.Component {
                     <div className="handle">
                         <div className="window__top">
                             <div className="window__buttons">
-                                <i className="fas fa-times"></i>
-                                <i className="fas fa-window-minimize"></i>
-                                <i class="fas fa-expand-alt"></i>
+                                <div className="window__close">
+                                    <i className="fas fa-times fa-xs"></i>
+                                </div>
+                                <div className="window__minimize">
+                                    <i className="fas fa-window-minimize fa-xs"></i>
+                                </div>
+                                <div className="window__expand">
+                                    <i class="fas fa-expand-alt fa-xs"></i>
+                                </div>
                             </div>
                             <div className="window__name">
                                 my first window

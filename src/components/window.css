@@ -13,13 +13,16 @@
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     height: 5%;
     /* justify-content: space-between; */
 }
 
 .window__name {
     color: white;
+    pointer-events: none;
+    align-self: center;
+    flex: 1;
 }
 
 .window__body {
@@ -37,30 +40,53 @@
 .window__buttons {
     padding: 2px;
     position: relative;
+    display: flex;
+    flex: .8;
 }
 
-.fas {
-    border-radius: 100px;
-    padding: 3px;
-    max-height: 15px;
-    max-width: 15px;
-    margin: 2px 6px;
+.window__buttons div {
+    border-radius: 10px;
+    /* padding: 2px; */
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
 }
 
-.fa-times {
-    color: #84020B;
+/* .window__buttons i{
+    opacity: 0;
+}
+
+.window__buttons:hover i {
+    opacity: 1;
+} */
+
+.window__close {
     background-color: #FD5854;
     border: 1px solid #84020B; 
 }
 
-.fa-window-minimize {
-    color: #985815;
+.fa-times {
+    color: #84020B;
+}
+
+.window__minimize {
     background-color: #FDBC40;
     border: 1px solid #985815;
 }
 
-.fa-expand-alt {
-    color: #10640F;
+.fa-window-minimize {
+    color: #985815;
+}
+
+.window__expand {
     background-color: #31C747;
     border: 1px solid #10640F;
+}
+
+.fa-expand-alt {
+    color: #10640F;
+
 }
