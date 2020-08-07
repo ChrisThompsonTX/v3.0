@@ -32,7 +32,7 @@
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     overflow: scroll;
-    height: 95%;
+    height: 96%;
 }
 
 /* Window Buttons */
@@ -55,13 +55,13 @@
     margin-left: 6px;
 }
 
-/* .window__buttons i{
+.window__buttons i{
     opacity: 0;
 }
 
 .window__buttons:hover i {
     opacity: 1;
-} */
+}
 
 .window__close {
     background-color: #FD5854;
