@@ -3,6 +3,7 @@
     border: 1px solid #1D1D1E;
     border-radius: var(--border-radius);
     width: 75vw;
+    max-width: 1100px;
     height: 60vh;
 }
 
