@@ -34,13 +34,29 @@ function Contact() {
             </div>
             <div className="contact__right">
                 <div className="contact__email">
-
+                    <i className="far fa-envelope fa-2x"></i>
+                    <div className="email__info">
+                        <h1>Email</h1>
+                        <h2>chris.tx86@gmail.com</h2>
+                    </div>
                 </div>
+                <div className="contact__divider"/>
                 <div className="contact__phone">
-                    
+                    <i class="fas fa-phone fa-2x"></i>
+                    <div className="phone__info">
+                        <h1>Phone</h1>
+                        <h2>(281) 660-6542</h2>
+                    </div>
                 </div>
+                <div className="contact__divider"/>
                 <div className="contact__social">
-
+                    <i class="far fa-user fa-2x"></i>
+                    <div className="social__info">
+                        <h1>Social Links</h1>
+                        <div className="social__links">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

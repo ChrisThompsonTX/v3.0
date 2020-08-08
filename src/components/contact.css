@@ -15,10 +15,39 @@
 }
 
 .contact__right {
-    background-color: green;
+    background-color: #313437;
     height: 100%;
     width: 35%;
 }
+
+.contact__email, .contact__phone, .contact__social {
+    height: 33.2%;
+    width: 100%;
+    background-color: #313437;
+    color: #AFAFAF;
+    display: flex;
+    align-items: center;
+}
+
+.email__info, .phone__info, .social__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+
+.email__info h1, .phone__info h1, .social__info h1 {
+    color: #F7F8F9;
+    font-weight: 600;
+}
+
+.email__info h2, .phone__info h2, .social__info h2 {
+    font-size: .9rem;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
 
 .contact__form {
     width: 80%;
@@ -42,6 +71,14 @@
 
 .spacer {
     width: 10px;
+}
+
+.contact__divider {
+    width: 80%;
+    height: 1px;
+    background-color: #AFAFAF;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Input Animations */
@@ -78,7 +115,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    border-bottom: 3px solid #AFAFAF;
+    border-bottom: 3px solid #5AC8FA;
     left: 0px;
     bottom: -1px;
     transform: translateX(-100%);
@@ -101,6 +138,10 @@
 
 .form input:focus {
     background-color: #372F2F;
+}
+
+input, select, textarea{
+    color: #F7F8F9;
 }
 
 .form textarea:focus + .label-name .content-name, .form textarea:valid + .label-name .content-name {
@@ -134,6 +175,7 @@
     border-bottom: 3px solid #242424;
     margin-bottom: 20px;
     background-color: #242424;
+    resize: none;
 }
 
 .contact__form input[type="submit"]{

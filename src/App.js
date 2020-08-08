@@ -52,6 +52,7 @@ function App() {
           defaultPosition={{x: 290, y: -200}}
         />
       <Window name="Contact" />
+      {/* <Window name="About Me" /> */}
       </div>
       <OSDock />
     </div>
