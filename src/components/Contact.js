@@ -13,6 +13,7 @@ function Contact() {
                                 <span className="content-name">Name</span>
                             </label>
                         </div>
+                        <div className="spacer"/>
                         <div className="form">
                             <input type="text" name="name" autocomplete="off" required />
                             <label for="name" className="label-name">
@@ -27,8 +28,8 @@ function Contact() {
                                 <span className="content-name">Message</span>
                             </label>
                         </div>
-
                     </div>
+                    <input type="submit" name="" value="Send"/>
                 </form>
             </div>
             <div className="contact__right">

@@ -6,7 +6,7 @@
 }
 
 .contact__left {
-    background-color: red;
+    background-color: #313437;
     height: 100%;
     width: 65%;
     display: flex;
@@ -22,6 +22,8 @@
 
 .contact__form {
     width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .form__top {
@@ -30,11 +32,16 @@
 
 .form__bottom {
     width: 100%;
+    margin-top: 10px;
 }
 
 .form__bottom .form {
     width: 100%;
     height: 200px;
+}
+
+.spacer {
+    width: 10px;
 }
 
 /* Input Animations */
@@ -52,6 +59,7 @@
     padding-top: 10px;
     border: none;
     outline: none;
+    background-color: #242424;
 }
 
 .form label {
@@ -62,6 +70,7 @@
     width: 100%;
     pointer-events: none;
     border-bottom: 1px solid black;
+    color: #AFAFAF;
 }
 
 .form label::after{
@@ -69,7 +78,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    border-bottom: 3px solid #5fa8d3;
+    border-bottom: 3px solid #AFAFAF;
     left: 0px;
     bottom: -1px;
     transform: translateX(-100%);
@@ -86,9 +95,58 @@
 .form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name {
     transform: translateY(-120%);
     font-size: 14px;
-    color: #5fa8d3;
+    color: #F7F8F9;
+    font-weight: bold;
+}
+
+.form input:focus {
+    background-color: #372F2F;
+}
+
+.form textarea:focus + .label-name .content-name, .form textarea:valid + .label-name .content-name {
+    transform: translateY(-1000%);
+    font-size: 14px;
+    color: #F7F8F9;
+    font-weight: bold;
+}
+
+.form textarea:focus {
+    background-color: #372F2F;
 }
 
 .form input:focus + .label-name::after, .form input:valid + .label-name::after {
     transform: translateX(0%);
+}
+
+.form textarea:focus + .label-name::after, .form textarea:valid + .label-name::after {
+    transform: translateX(0%);
+}
+
+.form textarea {
+    padding-top: 25px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #242424;
+    margin-bottom: 20px;
+    background-color: #242424;
+}
+
+.contact__form input[type="submit"]{
+    border-bottom: none;
+    cursor: pointer;
+    background: #4B4B4C;
+    color: #E3E4E3;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    width: 40%;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius);
 }
