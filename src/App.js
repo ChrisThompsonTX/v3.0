@@ -51,7 +51,8 @@ function App() {
           github=""
           defaultPosition={{x: 290, y: -200}}
         />
-      <Window name="Contact" />
+      {/* <Window name="Projects" /> */}
+      {/* <Window name="Contact" /> */}
       {/* <Window name="About Me" /> */}
       </div>
       <OSDock />
