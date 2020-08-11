@@ -1,0 +1,31 @@
+
+.projectitem__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E2024;
+    color: #D5D5D7;
+}
+
+.projectitem {
+    width: 85%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.projectitem__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectitem__title {
+    font-weight: 700;
+}
+
+.projectitem__tech {
+    font-size: .8rem;
+}
+
+.projectitem__date, .projectitem__description {
+    color: #87888D;
+}
