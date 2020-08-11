@@ -110,3 +110,28 @@ a {
 .desktop {
   height: 100vh;
 }
+
+.v3__desktop {
+    display: unset;
+  }
+
+.v3__mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 731px) {
+
+  body {
+    background-image: unset;
+  }
+
+  .v3__desktop {
+    display: none;
+  }
+
+  .v3__mobile {
+    display: unset;
+  }
+
+}
