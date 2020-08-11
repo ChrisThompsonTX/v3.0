@@ -3,13 +3,14 @@ import './index.css';
 
 import DropdownMenu from './components/DropdownMenu';
 import Clock from './components/Clock'
-import { OSDock } from './components/OSDock'
+import OSDock from './components/OSDock'
 import Icon from './components/Icon'
 import Window from './components/Window'
 
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
 function App() {
+  const [open, setOpen] = useState(false);
 
   return (
     <div>
@@ -51,11 +52,9 @@ function App() {
           github=""
           defaultPosition={{x: 290, y: -200}}
         />
-      {/* <Window name="Projects" /> */}
-      {/* <Window name="Contact" /> */}
-      {/* <Window name="About Me" /> */}
+      <Window open={open} closeWindow={()=> setOpen(false)} />
       </div>
-      <OSDock />
+      <OSDock open={open} setOpen={setOpen} />
     </div>
   );
 }

@@ -5,6 +5,7 @@ function Contact() {
     return (
         <div className="contact">
             <div className="contact__left">
+                <h1>Contact Me</h1>
                 <form className="contact__form">
                     <div className="form__top">
                         <div className="form">

@@ -7,23 +7,10 @@ import Projects from './Projects';
 
 class Window extends React.Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            open: true,
-        }
-
-        this.handleOpen = this.handleOpen.bind(this)
-    }
-
-    handleOpen() {
-        this.setState({open: !this.state.open})
-    }
-
     render() {
 
-        let { name } = this.props
-
+        let { open, closeWindow } = this.props
+        if (!open) return null;
 
         return (
             <Draggable
@@ -40,7 +27,7 @@ class Window extends React.Component {
                     <div className="handle">
                         <div className="window__top">
                             <div className="window__buttons">
-                                <div onClick={this.handleOpen} className="window__close">
+                                <div onClick={closeWindow} className="window__close">
                                     <i className="fas fa-times fa-xs"></i>
                                 </div>
                                 <div className="window__minimize">
@@ -50,13 +37,13 @@ class Window extends React.Component {
                                     <i className="fas fa-expand-alt fa-xs"></i>
                                 </div>
                             </div>
-                            <div className="window__name">{name}</div>
+                            <div className="window__name">{open}</div>
                         </div>
                     </div>
                     <div className="window__body">
-                        {name === "About Me" ? <AboutMe /> : null}
-                        {name === "Contact" ? <Contact /> : null}
-                        {name === "Projects" ? <Projects /> : null}
+                        {open === "About Me" ? <AboutMe /> : null}
+                        {open === "Contact" ? <Contact /> : null}
+                        {open === "Projects" ? <Projects /> : null}
                     </div>
                 </div>
             </Draggable>

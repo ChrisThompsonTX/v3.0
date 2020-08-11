@@ -5,10 +5,6 @@ import './icon.css';
 
 class Icon extends React.Component {
 
-    constructor(props) {
-        super(props)
-    }
-
     render() {
 
         let { defaultPosition, name, image, demo, github } = this.props
