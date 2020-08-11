@@ -63,6 +63,13 @@ class Projects extends React.Component {
                         description="React app to keep track of total expenses using React Hooks"
                         setOpen={() => this.setOpen("React Expense Tracker")}
                     />
+                    <ProjectItem 
+                        title="Amity Lianne"
+                        date="6/29 - 7/10"
+                        tech="(Javascript, HTML, CSS)"
+                        description="A mobile friendly portfolio site made for my moms art for her Birthday"
+                        setOpen={() => this.setOpen("Amity Lianne")}
+                    />
                 </div>
                 <div className="projects__right">
                     {this.state.open === "Chicken Tinder" ? <iframe title="Chicken Tinder" src="https://lit-atoll-81167.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
@@ -71,6 +78,7 @@ class Projects extends React.Component {
                     {this.state.open === "Instagram Clone" ? <iframe title="Instagram Clone" src="https://reactinstagram-c443e.web.app/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Paralax-Scroll" ? <iframe title="Paralax-Scroll" src="http://christhompson.online/Paralax-Scroll/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "React Expense Tracker" ? <iframe title="React Expense Tracker" src="https://lit-atoll-81167.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
+                    {this.state.open === "Amity Lianne" ? <iframe title="Amity Lianne" src="https://www.amitylianne.com/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                 </div>
             </div>
         )
