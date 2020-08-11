@@ -16,14 +16,14 @@ class Window extends React.Component {
             <Draggable
                 axis="both"
                 handle=".handle"
-                defaultPosition={{ x: 120, y: -300 }}
+                defaultPosition={ open === "Projects" ? {x: 10, y: -400 }: { x: 120, y: -300 }}
                 position={null}
                 grid={[1, 1]}
                 scale={1}
                 onStart={this.handleStart}
                 onDrag={this.handleDrag}
                 onStop={this.handleStop}>
-                <div className="window">
+                <div className={ open === "Projects" ? "window window__projects" : "window"}>
                     <div className="handle">
                         <div className="window__top">
                             <div className="window__buttons">

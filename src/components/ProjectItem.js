@@ -2,10 +2,10 @@ import React from 'react'
 import './projectitem.css'
 
 export default function ProjectItem(props) {
-    let { title, date, tech, description } = props
+    let { title, date, tech, description, setOpen } = props
 
     return (
-        <div className="projectitem__container">
+        <div onClick={() => {setOpen(title)}} className="projectitem__container">
             <div className="projectitem">
                 <div className="projectitem__header" >
                     <div className="projectitem__title">{title}</div>
