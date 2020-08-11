@@ -6,10 +6,13 @@ import { ReactComponent as ChevronIcon } from '../icons/chevron.svg';
 import { ReactComponent as ArrowIcon } from '../icons/arrow.svg';
 import './dropdownmenu.css'
 
-function DropdownMenu() {
+import DropdownItem from './DropdownItem'
+
+function DropdownMenu(props) {
     const [activeMenu, setActiveMenu] = useState('main');
     const [menuHeight, setMenuHeight] = useState(null);
     const dropdownRef = useRef(null);
+    
 
     useEffect(() => {
         setMenuHeight(dropdownRef.current ?.firstChild.offsetHeight)
@@ -18,21 +21,6 @@ function DropdownMenu() {
     function calcHeight(el) {
         const height = el.offsetHeight;
         setMenuHeight(height);
-    }
-
-    function DropdownItem(props) {
-        return (
-            <a href="/" 
-                className="menu-item" 
-                onClick={(e) => {
-                    e.preventDefault();
-                    props.goToMenu && setActiveMenu(props.goToMenu)
-                }}>
-                <span className="icon-button">{props.leftIcon}</span>
-                {props.children}
-                <span className="icon-button icon-right">{props.rightIcon}</span>
-            </a>
-        );
     }
 
     return (
@@ -45,17 +33,21 @@ function DropdownMenu() {
                 unmountOnExit
                 onEnter={calcHeight}>
                 <div className="menu">
-                    <DropdownItem>About Chris Thompson</DropdownItem>
-                    <DropdownItem
+                    <DropdownItem onClick={() => props.setOpen("About Me")}>About Chris Thompson</DropdownItem>
+                    <DropdownItem 
                         leftIcon={<CogIcon />}
                         rightIcon={<ChevronIcon />}
-                        goToMenu="settings">
+                        goToMenu="settings"
+                        setActiveMenu={setActiveMenu}
+                    >
                         Notable Skills
                     </DropdownItem>
                     <DropdownItem
                         leftIcon={<i class="fas fa-folder-open"></i>}
                         rightIcon={<ChevronIcon />}
-                        goToMenu="animals">
+                        goToMenu="animals"
+                        setActiveMenu={setActiveMenu}
+                        >
                         Recent Projects
                         </DropdownItem>
 
@@ -69,7 +61,11 @@ function DropdownMenu() {
                 unmountOnExit
                 onEnter={calcHeight}>
                 <div className="menu">
-                    <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
+                    <DropdownItem 
+                        goToMenu="main" 
+                        leftIcon={<ArrowIcon />}
+                        setActiveMenu={setActiveMenu}
+                    >
                     </DropdownItem>
                     <DropdownItem leftIcon={<i class="fab fa-js-square"></i>}>Javascript</DropdownItem>
                     <DropdownItem leftIcon={<i class="fab fa-react"></i>}>React/Redux</DropdownItem>
@@ -91,7 +87,11 @@ function DropdownMenu() {
                 unmountOnExit
                 onEnter={calcHeight}>
                 <div className="menu">
-                    <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
+                    <DropdownItem 
+                        goToMenu="main" 
+                        leftIcon={<ArrowIcon />}
+                        setActiveMenu={setActiveMenu}
+                    >
                     </DropdownItem>
                     <DropdownItem leftIcon="🐔">Chicken Tinder</DropdownItem>
                     <DropdownItem leftIcon="🍻">Tappd</DropdownItem>
