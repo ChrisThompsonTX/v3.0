@@ -1,10 +1,15 @@
 import React from 'react';
 import './mobiledock.css';
 
+import MobileIcon from './MobileIcon';
+
 function MobileDock() {
     return (
         <div className="mobiledock">
-            I'm a mobile dock.
+            <MobileIcon />
+            <MobileIcon />
+            <MobileIcon />
+            <MobileIcon />
         </div>
     )
 }

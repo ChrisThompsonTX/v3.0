@@ -9,4 +9,7 @@
     align-self: center;
     margin: 2vw;
     padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }

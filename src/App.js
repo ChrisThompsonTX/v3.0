@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import './index.css';
 
 import DropdownMenu from './components/DropdownMenu';
-import OSDock from './components/OSDock'
-import Icon from './components/Icon'
-import Window from './components/Window'
-import Navbar from './components/Navbar'
-import NavItem from './components/NavItem'
-import MobileHome from './components/MobileHome'
-import MobileDock from './components/MobileDock'
+import OSDock from './components/OSDock';
+import Icon from './components/Icon';
+import Window from './components/Window';
+import Navbar from './components/Navbar';
+import NavItem from './components/NavItem';
+import MobileHome from './components/MobileHome';
+import MobileDock from './components/MobileDock';
+import MobileHeader from './components/MobileHeader';
 
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <div>
       <div className="v3__mobile">
+        <MobileHeader />
         <MobileHome />
         <MobileDock />
       </div>

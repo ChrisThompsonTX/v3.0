@@ -1,0 +1,16 @@
+
+.mobileicon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileicon > img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.mobileicon > p {
+    font-size: 12px;
+}
