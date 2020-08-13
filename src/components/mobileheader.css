@@ -8,11 +8,15 @@
 }
 
 .mobileheader__left {
-    padding-left: 8px;
+    padding-left: 10px;
+}
+
+.mobileheader__left > .clock {
+    font-weight: 600;
 }
 
 .mobileheader__right {
-    padding-right: 8px;
+    padding-right: 10px;
     color: white;
 }
 
