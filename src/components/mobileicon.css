@@ -6,8 +6,9 @@
 }
 
 .mobileicon > img {
-    height: 80px;
-    width: 80px;
+    height: 20vw;
+    width: 20vw;
+    max-height: 100px;
     object-fit: contain;
 }
 
@@ -15,7 +16,7 @@
     font-size: 12px;
     background: white;
     padding: 0 5px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .mobileicon__link {
