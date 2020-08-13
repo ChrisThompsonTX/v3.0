@@ -12,7 +12,7 @@ class OSDock extends React.Component {
             <div className="dock">
                 <Dock 
                     backgroundClassName="dock__background" 
-                    width={width / 3} 
+                    width={600} 
                     magnification={1.3} 
                     magnifyDirection="up" 
                 >
