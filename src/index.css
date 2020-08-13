@@ -131,7 +131,14 @@ a {
   }
 
   .v3__mobile {
-    display: unset;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/c0c8b494aacf479504f7d8ee1b295a41.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 }

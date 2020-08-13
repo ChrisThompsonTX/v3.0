@@ -1,0 +1,9 @@
+
+.mobilehome {
+    flex: .88;
+    height: 90%;
+    width: 90%;
+    align-self: center;
+    padding: 2vw;
+    padding-top: 4vw;
+}

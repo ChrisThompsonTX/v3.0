@@ -7,6 +7,8 @@ import Icon from './components/Icon'
 import Window from './components/Window'
 import Navbar from './components/Navbar'
 import NavItem from './components/NavItem'
+import MobileHome from './components/MobileHome'
+import MobileDock from './components/MobileDock'
 
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
@@ -16,7 +18,8 @@ function App() {
   return (
     <div>
       <div className="v3__mobile">
-        WHATSUP
+        <MobileHome />
+        <MobileDock />
       </div>
       <div className="v3__desktop">
         <Navbar>
