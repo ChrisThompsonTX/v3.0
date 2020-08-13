@@ -1,12 +1,14 @@
 import React from 'react';
 import './mobileicon.css';
 
-function MobileIcon() {
+function MobileIcon({ icon, name, onClick, link }) {
     return (
-        <div className="mobileicon">
-            <img src="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/finder.png" alt="" />
-            <p>Home</p>
-        </div>
+        <a className="mobileicon__link" href={link} >
+            <div className="mobileicon" onClick={ onClick ? () => onClick() : null}>
+                <img src={icon} alt="" />
+                <p>{name}</p>
+            </div>
+        </a>
     )
 }
 
