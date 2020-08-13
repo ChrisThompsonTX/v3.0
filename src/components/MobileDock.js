@@ -6,10 +6,22 @@ import MobileIcon from './MobileIcon';
 function MobileDock() {
     return (
         <div className="mobiledock">
-            <MobileIcon icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/about_mobile.png" name="About Me" />
-            <MobileIcon icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/contact_mobile.png" name="Contact" />
-            <MobileIcon icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/resume_mobile.png" name="Resume" />
-            <MobileIcon icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/projects_mobile.png" name="Projects" />
+            <MobileIcon 
+                icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/about_mobile.png" 
+                name="About Me" 
+                />
+            <MobileIcon 
+                icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/contact_mobile.png" 
+                name="Contact" 
+                />
+            <MobileIcon 
+                icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/resume_mobile.png" 
+                name="Resume" 
+                />
+            <MobileIcon 
+                icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/projects_mobile.png" 
+                name="Projects" 
+                />
         </div>
     )
 }
