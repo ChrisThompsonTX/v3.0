@@ -10,3 +10,12 @@
 .mobileheader__left {
     padding-left: 8px;
 }
+
+.mobileheader__right {
+    padding-right: 8px;
+    color: white;
+}
+
+.mobileheader__right > i {
+    padding-left: 8px;
+}
