@@ -19,8 +19,23 @@
 
 .mobileresume__child {
     opacity: 0;
+    height: 100%;
 }
 
 .mobileresume__child.fade {
     opacity: 1;
+}
+
+.mobileresume__container {
+    width: 95%;
+    height: 80%;
+    margin: auto;
+    margin-top: 12px;
+    background-color: white;
+
+}
+
+.mobileresume__container > iframe {
+    width: 100%;
+    height: 100%;
 }
