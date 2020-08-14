@@ -11,4 +11,4 @@ function MobileAboutMe({ open }) {
     )
 }
 
-export default MobileAboutMe
+export default MobileAboutMe;
