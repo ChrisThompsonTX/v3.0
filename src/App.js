@@ -12,6 +12,7 @@ import MobileDock from './components/MobileDock';
 import MobileHeader from './components/MobileHeader';
 
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
+import MobileAboutMe from './components/MobileAboutMe';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -19,9 +20,12 @@ function App() {
   return (
     <div>
       <div className="v3__mobile">
+        <MobileAboutMe open={open} setOpen={setOpen} />
         <MobileHeader />
         <MobileHome />
-        <MobileDock />
+        <MobileDock setOpen={setOpen}/>
+
+
       </div>
       <div className="v3__desktop">
         <Navbar>

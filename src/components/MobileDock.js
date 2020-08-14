@@ -3,12 +3,15 @@ import './mobiledock.css';
 
 import MobileIcon from './MobileIcon';
 
-function MobileDock() {
+function MobileDock({setOpen}) {
+
+
     return (
         <div className="mobiledock">
             <MobileIcon 
                 icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/about_mobile.png" 
                 name="About Me" 
+                onClick={setOpen}
                 />
             <MobileIcon 
                 icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/contact_mobile.png" 
@@ -27,3 +30,5 @@ function MobileDock() {
 }
 
 export default MobileDock
+
+

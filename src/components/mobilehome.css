@@ -4,11 +4,9 @@
     height: 90%;
     width: 90%;
     align-self: center;
-    padding: 2vw;
-    padding-top: 4vw;
+    padding: 0 2vw;
     display: flex;
     flex-direction: column;
-
     overflow: scroll;
 }
 

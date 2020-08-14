@@ -4,7 +4,7 @@ import './mobileicon.css';
 function MobileIcon({ icon, name, onClick, link }) {
     return (
         <a className="mobileicon__link" href={link} >
-            <div className="mobileicon" onClick={ onClick ? () => onClick() : null}>
+            <div className="mobileicon" onClick={ onClick ? () => onClick(name ? name : false) : null}>
                 <img src={icon} alt="" />
                 <p>{name}</p>
             </div>
