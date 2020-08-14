@@ -53,19 +53,26 @@
 .mobileaboutme__namecontainer {
     margin-top: 12px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
     color: white;
 }
 
 .mobileaboutme__namecontainer > h2 {
     font-weight: 800;
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 2px;
 }
 
 .mobileaboutme__namecontainer > h1 {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 28px;
     margin-left: 5px;
+}
+
+.mobileaboutme__child > h3 {
+    font-size: 10px;
+    color: white;
 }
 
 .mobileaboutme__body {
