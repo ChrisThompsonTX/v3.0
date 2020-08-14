@@ -13,6 +13,9 @@ import MobileHeader from './components/MobileHeader';
 
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 import MobileAboutMe from './components/MobileAboutMe';
+import MobileContact from './components/MobileContact';
+import MobileResume from './components/MobileResume';
+import MobileProjects from './components/MobileProjects';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -20,10 +23,13 @@ function App() {
   return (
     <div>
       <div className="v3__mobile">
-        <MobileAboutMe open={open} setOpen={setOpen} />
+        <MobileAboutMe open={open} />
+        <MobileContact open={open} />
+        <MobileResume open={open} />
+        <MobileProjects open={open} />
         <MobileHeader />
         <MobileHome />
-        <MobileDock setOpen={setOpen}/>
+        <MobileDock setOpen={setOpen} open={open}/>
 
 
       </div>

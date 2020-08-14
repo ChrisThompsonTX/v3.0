@@ -1,26 +1,26 @@
 
-.mobileaboutme {
+.mobilecontact {
     position: fixed;
-    background: #5b78c7;
+    background: tomato;
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(10px at 10% 90%);
-    -webkit-clip-path: circle(10px at 10% 90%);
+    clip-path: circle(10px at 35% 90%);
+    -webkit-clip-path: circle(10px at 35% 90%);
     transition: all 0.5s ease-out;
     pointer-events: none;
 }
 
-.mobileaboutme.open {
+.mobilecontact.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
 }
 
-.mobileaboutme__child {
+.mobilecontact__child {
     opacity: 0;
 }
 
-.mobileaboutme__child.fade {
+.mobilecontact__child.fade {
     opacity: 1;
 }
