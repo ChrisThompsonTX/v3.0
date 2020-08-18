@@ -5,10 +5,11 @@
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(10px at 85% 90%);
-    -webkit-clip-path: circle(10px at 85% 90%);
+    clip-path: circle(0px at 85% 90%);
+    -webkit-clip-path: circle(0px at 85% 90%);
     transition: all 0.5s ease-out;
     pointer-events: none;
+    padding-top: 30px;
 }
 
 .mobileprojects.open {
@@ -19,6 +20,8 @@
 
 .mobileprojects__child {
     opacity: 0;
+    height: 75%;
+    overflow: scroll;
 }
 
 .mobileprojects__child.fade {

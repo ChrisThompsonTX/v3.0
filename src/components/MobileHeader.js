@@ -9,8 +9,8 @@ function MobileHeader() {
                 <Clock />
             </div>
             <div className="mobileheader__right">
-                <i class="fas fa-signal"></i>
-                <i class="fas fa-wifi"></i>
+                <i className="fas fa-signal"></i>
+                <i className="fas fa-wifi"></i>
                 <i className="fas fa-battery-full"></i>
             </div>
         </div>

@@ -5,7 +5,6 @@ import './osdock.css'
 class OSDock extends React.Component {
 
     render() {
-        let width = window.innerWidth
         let {open, setOpen} = this.props
         
         return (

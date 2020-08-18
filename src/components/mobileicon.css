@@ -6,6 +6,10 @@
     z-index: 100;
 }
 
+.closed {
+    display: none;
+}
+
 .mobileicon > img {
     height: 20vw;
     width: 20vw;

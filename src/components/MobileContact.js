@@ -9,23 +9,23 @@ function MobileContact({ open }) {
                 <form className="contact__form">
                     <div className="form__top">
                         <div className="form">
-                            <input type="text" name="name" autocomplete="off" required />
-                            <label for="name" className="label-name">
+                            <input type="text" name="name" autoComplete="off" required />
+                            <label htmlFor="name" className="label-name">
                                 <span className="content-name">Name</span>
                             </label>
                         </div>
                         <div className="spacer" />
                         <div className="form">
-                            <input type="text" name="name" autocomplete="off" required />
-                            <label for="name" className="label-name">
+                            <input type="text" name="name" autoComplete="off" required />
+                            <label htmlFor="name" className="label-name">
                                 <span className="content-name">E-mail</span>
                             </label>
                         </div>
                     </div>
                     <div className="form__bottom">
                         <div className="form">
-                            <textarea type="text" name="name" autocomplete="off" required />
-                            <label for="name" className="label-name">
+                            <textarea type="text" name="name" autoComplete="off" required />
+                            <label htmlFor="name" className="label-name">
                                 <span className="content-name">Message</span>
                             </label>
                         </div>
