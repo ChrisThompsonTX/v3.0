@@ -43,7 +43,7 @@ function DropdownMenu(props) {
                         Notable Skills
                     </DropdownItem>
                     <DropdownItem
-                        leftIcon={<i class="fas fa-folder-open"></i>}
+                        leftIcon={<i className="fas fa-folder-open"></i>}
                         rightIcon={<ChevronIcon />}
                         goToMenu="animals"
                         setActiveMenu={setActiveMenu}
@@ -67,16 +67,16 @@ function DropdownMenu(props) {
                         setActiveMenu={setActiveMenu}
                     >
                     </DropdownItem>
-                    <DropdownItem leftIcon={<i class="fab fa-js-square"></i>}>Javascript</DropdownItem>
-                    <DropdownItem leftIcon={<i class="fab fa-react"></i>}>React/Redux</DropdownItem>
-                    <DropdownItem leftIcon={<i class="fas fa-gem"></i>}>Ruby</DropdownItem>
-                    <DropdownItem leftIcon={<i class="fab fa-python"></i>}>Python</DropdownItem>
-                    <DropdownItem leftIcon={<i class="fas fa-database"></i>}>SQL/noSQL databases</DropdownItem>
+                    <DropdownItem leftIcon={<i className="fab fa-js-square"></i>}>Javascript</DropdownItem>
+                    <DropdownItem leftIcon={<i className="fab fa-react"></i>}>React/Redux</DropdownItem>
+                    <DropdownItem leftIcon={<i className="fas fa-gem"></i>}>Ruby</DropdownItem>
+                    <DropdownItem leftIcon={<i className="fab fa-python"></i>}>Python</DropdownItem>
+                    <DropdownItem leftIcon={<i className="fas fa-database"></i>}>SQL/noSQL databases</DropdownItem>
                     <DropdownItem leftIcon={<BoltIcon />}>jQuery</DropdownItem>
-                    <DropdownItem leftIcon={<i class="fab fa-node"></i>}>Node</DropdownItem>
-                    <DropdownItem leftIcon={<i class="fas fa-database"></i>}>MongoDB</DropdownItem>
+                    <DropdownItem leftIcon={<i className="fab fa-node"></i>}>Node</DropdownItem>
+                    <DropdownItem leftIcon={<i className="fas fa-database"></i>}>MongoDB</DropdownItem>
                     <DropdownItem leftIcon={<BoltIcon />}>Express</DropdownItem>
-                    <DropdownItem leftIcon={<i class="fab fa-aws"></i>}>AWS</DropdownItem>
+                    <DropdownItem leftIcon={<i className="fab fa-aws"></i>}>AWS</DropdownItem>
                 </div>
             </CSSTransition>
 

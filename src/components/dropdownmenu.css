@@ -5,9 +5,8 @@
   left: 162px;
   width: 280px;
   transform: translateX(-45%);
-  background-color: var(--bg);
+  background-color: rgba(37,37,38,0.8);
   border: var(--border);
-  opacity: .8;
   border-top: none;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
