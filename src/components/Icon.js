@@ -32,9 +32,12 @@ class Icon extends React.Component {
                     </div>
                     <div> {name}</div>
                     <div className="project__links">
-                        <a href={demo}>Demo</a>
+                        {/* <a href={demo}>Demo</a>
                         <h1>  |  </h1>
-                        <a href={github}>GitHub</a>
+                        <a href={github}>GitHub</a> */}
+                        <a href={demo} className="button-3d">Demo</a>
+                        <h1>  |  </h1>
+                        <a href={github} className="button-3d">GitHub</a>
                     </div>
                 </div>
             </Draggable>
