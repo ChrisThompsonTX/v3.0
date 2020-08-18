@@ -1,9 +1,7 @@
 .project {
     cursor: pointer;
-    width: 5vw;
-    height: 5vw;
-    min-width: 80px;
-    min-height: 80px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
