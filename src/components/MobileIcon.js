@@ -12,7 +12,7 @@ function MobileIcon({ icon, name, open, setOpen, link }) {
     }
 
     return (
-        <a className="mobileicon__link" href={link} >
+        <a className={open === name || open === false ? "mobileicon__link open" : "mobileicon__link closed" } href={link} >
             <div className="mobileicon" onClick={() => handleClick()}>
                 <img src={icon} alt="" />
                 <p>{name}</p>
