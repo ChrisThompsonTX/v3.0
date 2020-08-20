@@ -55,21 +55,21 @@ function App() {
             image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Tappd.png"
             demo="https://tappd-ct.herokuapp.com/#/"
             github="https://github.com/ChrisThompsonTX/Tappd"
-            defaultPosition={{x: 160, y: -59}}
+            defaultPosition={{x: 160, y: -41}}
           />
           <Icon
             name="WikiClicker"
             image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/proj.png"
             demo="http://christhompson.online/WikiClicker/"
             github="https://github.com/ChrisThompsonTX/WikiClicker"
-            defaultPosition={{x: 282, y: -178}}
+            defaultPosition={{x: 282, y: -142}}
           />
           <Icon
             name="Insta-Clone"
             image="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/instagram.png"
             demo="https://reactinstagram-c443e.web.app/"
             github=""
-            defaultPosition={{x: 400, y: -297}}
+            defaultPosition={{x: 400, y: -243}}
           />
         <Window open={open} closeWindow={()=> setOpen(false)} />
         </div>

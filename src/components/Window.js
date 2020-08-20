@@ -16,7 +16,7 @@ class Window extends React.Component {
             <Draggable
                 axis="both"
                 handle=".handle"
-                defaultPosition={ open === "Projects" ? {x: 10, y: -400 }: { x: 120, y: -300 }}
+                defaultPosition={ open === "Projects" ? {x: 10, y: -350 }: { x: 120, y: -300 }}
                 position={null}
                 grid={[1, 1]}
                 scale={1}

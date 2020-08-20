@@ -22,13 +22,15 @@ class Icon extends React.Component {
                 onStop={this.handleStop}>
                 <div className="icon">
                     <div className="handle">
-                        <img 
-                            className="project" 
-                            alt="project" 
-                            src={image}
-                            draggable="false"
-                            onDoubleClick={null}
-                        />
+                        <div className="icon__imgcontainer">
+                            <img 
+                                className="project" 
+                                alt="project" 
+                                src={image}
+                                draggable="false"
+                                onDoubleClick={null}
+                            />
+                        </div>
                     </div>
                     <div> {name}</div>
                     <div className="project__links">

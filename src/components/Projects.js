@@ -1,7 +1,7 @@
 import React from 'react'
 import './projects.css';
 import ProjectItem from './ProjectItem';
-// import ProjectContent from './ProjectContent';
+import ProjectContent from './ProjectContent';
 
 class Projects extends React.Component {
     
@@ -72,13 +72,21 @@ class Projects extends React.Component {
                     />
                 </div>
                 <div className="projects__right">
-                    {this.state.open === "Chicken Tinder" ? <iframe title="Chicken Tinder" src="https://lit-atoll-81167.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
+                    <ProjectContent
+                        title="Chicken Tinder"
+                        date="3/15 - 6/1"
+                        tech="(MongoDB, Javascript, Express, React, Node, Mapbox, Yelp API)"
+                        description="A single page app designed for groups to vote on a restaurant for their next gathering based on group location and filters."
+                        icon=""
+                        gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/CTDemo.gif"
+                    />
+                    {/* {this.state.open === "Chicken Tinder" ? <iframe title="Chicken Tinder" src="https://lit-atoll-81167.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Tappd" ? <iframe title="Tappd" src="https://tappd-ct.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Wiki-Clicker" ? <iframe title="Wiki-Clicker" src="http://christhompson.online/WikiClicker/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Instagram Clone" ? <iframe title="Instagram Clone" src="https://reactinstagram-c443e.web.app/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Paralax-Scroll" ? <iframe title="Paralax-Scroll" src="http://christhompson.online/Paralax-Scroll/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "React Expense Tracker" ? <iframe title="React Expense Tracker" src="https://lit-atoll-81167.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
-                    {this.state.open === "Amity Lianne" ? <iframe title="Amity Lianne" src="https://www.amitylianne.com/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
+                    {this.state.open === "Amity Lianne" ? <iframe title="Amity Lianne" src="https://www.amitylianne.com/" height="100%" width="100%" frameBorder="0" ></iframe> : null } */}
                 </div>
             </div>
         )
