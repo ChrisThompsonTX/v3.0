@@ -54,7 +54,7 @@ class Projects extends React.Component {
                         date="6/29 - 7/1"
                         tech="(Javascript, HTML, CSS)"
                         description="A first attempt at building out a Paralax Scroll"
-                        setOpen={() => this.setOpen("Paralax Scroll")}
+                        setOpen={() => this.setOpen("Paralax-Scroll")}
                     />
                     <ProjectItem 
                         title="React Expense Tracker"
@@ -123,10 +123,74 @@ class Projects extends React.Component {
                             livelink="https://lit-atoll-81167.herokuapp.com/#/"
                         />
                     : null }
-                    {/* {this.state.open === "Instagram Clone" ? <iframe title="Instagram Clone" src="https://reactinstagram-c443e.web.app/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
-                    {this.state.open === "Paralax-Scroll" ? <iframe title="Paralax-Scroll" src="http://christhompson.online/Paralax-Scroll/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
-                    {this.state.open === "React Expense Tracker" ? <iframe title="React Expense Tracker" src="https://lit-atoll-81167.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
-                    {this.state.open === "Amity Lianne" ? <iframe title="Amity Lianne" src="https://www.amitylianne.com/" height="100%" width="100%" frameBorder="0" ></iframe> : null } */}
+                    {this.state.open === "Instagram Clone" ? 
+                        <ProjectContent
+                            title="Instagram Clone"
+                            date="8/1 - 8/10"
+                            tech="(Javascript, React Hooks, Firebase)"
+                            description="Full Instagram clone with user auth and backend using Google Firebase"
+                            icon=""
+                            gif=""
+                            keyfeatures={["",
+                                "",
+                                ""
+                            ]}
+                            challenges={["", "", "", ""]}
+                            github=""
+                            livelink=""
+                        />
+                    : null }
+                    {this.state.open === "Paralax-Scroll" ? 
+                        <ProjectContent
+                            title="Paralax-Scroll"
+                            date="6/29 - 7/1"
+                            tech="(Javascript, HTML, CSS)"
+                            description="A first attempt at building out a Paralax Scroll"
+                            icon=""
+                            gif=""
+                            keyfeatures={["",
+                                "",
+                                ""
+                            ]}
+                            challenges={["", "", "", ""]}
+                            github=""
+                            livelink=""
+                        />
+                    : null }
+                    {this.state.open === "React Expense Tracker" ? 
+                        <ProjectContent
+                            title="React Expense Tracker"
+                            date="6/25 - 6/27"
+                            tech="(React, Hooks, Javascript)"
+                            description="React app to keep track of total expenses using React Hooks"
+                            icon=""
+                            gif=""
+                            keyfeatures={["",
+                                "",
+                                ""
+                            ]}
+                            challenges={["", "", "", ""]}
+                            github=""
+                            livelink=""
+                        />
+                    : null }
+                    {this.state.open === "Amity Lianne" ? 
+                        <ProjectContent
+                            title="Amity Lianne"
+                            date="6/29 - 7/10"
+                            tech="(Javascript, HTML, CSS)"
+                            description="A mobile friendly portfolio site made for my moms art for her Birthday"
+                            icon=""
+                            gif=""
+                            keyfeatures={["",
+                                "",
+                                ""
+                            ]}
+                            challenges={["", "", "", ""]}
+                            github=""
+                            livelink=""
+                        />
+                    : null }
                 </div>
             </div>
         )
