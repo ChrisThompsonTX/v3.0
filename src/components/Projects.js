@@ -79,19 +79,51 @@ class Projects extends React.Component {
                             tech="(MongoDB, Javascript, Express, React, Node, Mapbox, Yelp API)"
                             description="A single page app designed for groups to vote on a restaurant for their next gathering based on group location and filters."
                             icon=""
-                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/CTDemo.gif"
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/CT_trimmed.mp4.mp4"
                             keyfeatures={["Chicken Tinder allows users to create a group and select a location in San Francisco. The group creator can then search for other users to add to their group, as well as determine any initial food restrictions they would like their group to be aware of, whether the bill would be split among all members, and the price range they would like to filter by. Data from restaurants local to the area is then added to the group. The creator will also set a deadline for the members to vote.",
                                         "All group members can then log in to vote on each one of the pre-selected venues. Users can access any group they have been added to to either vote (if the group is ongoing) or view results (if the group deadline has passed).",
                                         "Once all the group members have voted or the deadline is reached, the top 3 venues are displayed, based on number of votes."
                                         ]}
                             challenges={["Responsive CSS design", "mplementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
-                            github=""
-                            livelink=""
+                            github="https://github.com/hkryucr/mern-ct"
+                            livelink="https://lit-atoll-81167.herokuapp.com/#/"
                         />
                     : null }
-                    {/* {this.state.open === "Tappd" ? <iframe title="Tappd" src="https://tappd-ct.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
-                    {this.state.open === "Wiki-Clicker" ? <iframe title="Wiki-Clicker" src="http://christhompson.online/WikiClicker/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
-                    {this.state.open === "Instagram Clone" ? <iframe title="Instagram Clone" src="https://reactinstagram-c443e.web.app/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
+                    {this.state.open === "Tappd" ? 
+                        <ProjectContent
+                            title="Tappd"
+                            date="2/1 - 5/10"
+                            tech="(Ruby on Rails, React, Redux, AWS)"
+                            description="A social media platform centered around beer utilizing a Ruby on Rails backend and React and Redux frontend."
+                            icon=""
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Tappd.mp4"
+                            keyfeatures={["Secure User Authorization using BCrypt hashing",
+                                            "User auth errors are separated and displayed over the proper field",
+                                            "Breweries are displayed in a list as links to a page displaying all their beers"
+                                        ]}
+                            challenges={["Responsive CSS design", "mplementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
+                            github="https://github.com/hkryucr/mern-ct"
+                            livelink="https://lit-atoll-81167.herokuapp.com/#/"
+                        />
+                    : null }
+                    {this.state.open === "Wiki-Clicker" ? 
+                        <ProjectContent
+                            title="Wiki-Clicker"
+                            date="4/19 - 5/2"
+                            tech="(Javascript, D3, Regex)"
+                            description="A game utilizing Javascripts D3 library and Wikipedia API to navigate from one starter page to another in 10 link “clicks”"
+                            icon=""
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Tappd.mp4"
+                            keyfeatures={["Secure User Authorization using BCrypt hashing",
+                                "User auth errors are separated and displayed over the proper field",
+                                "Breweries are displayed in a list as links to a page displaying all their beers"
+                            ]}
+                            challenges={["Responsive CSS design", "mplementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
+                            github="https://github.com/hkryucr/mern-ct"
+                            livelink="https://lit-atoll-81167.herokuapp.com/#/"
+                        />
+                    : null }
+                    {/* {this.state.open === "Instagram Clone" ? <iframe title="Instagram Clone" src="https://reactinstagram-c443e.web.app/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Paralax-Scroll" ? <iframe title="Paralax-Scroll" src="http://christhompson.online/Paralax-Scroll/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "React Expense Tracker" ? <iframe title="React Expense Tracker" src="https://lit-atoll-81167.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Amity Lianne" ? <iframe title="Amity Lianne" src="https://www.amitylianne.com/" height="100%" width="100%" frameBorder="0" ></iframe> : null } */}

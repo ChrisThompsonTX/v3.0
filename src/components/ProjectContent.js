@@ -35,9 +35,9 @@ export default function ProjectContent({
                 </div>
             </div>
             <div className="projectcontent__body">
-                <div className="projectcontent_gifcontainer">
-                    <img src={gif} alt="projectanimation" />
-                </div>
+                <video className="projectcontent_gifcontainer" muted autoPlay loop>
+                    <source src={gif} type="video/mp4"/>
+                </video>
                 {keyfeatures ? 
                     <div className="projectcontent__keyfeatures">
                         <h2>Key Features</h2>
