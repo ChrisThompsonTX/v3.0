@@ -72,16 +72,24 @@ class Projects extends React.Component {
                     />
                 </div>
                 <div className="projects__right">
-                    <ProjectContent
-                        title="Chicken Tinder"
-                        date="3/15 - 6/1"
-                        tech="(MongoDB, Javascript, Express, React, Node, Mapbox, Yelp API)"
-                        description="A single page app designed for groups to vote on a restaurant for their next gathering based on group location and filters."
-                        icon=""
-                        gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/CTDemo.gif"
-                    />
-                    {/* {this.state.open === "Chicken Tinder" ? <iframe title="Chicken Tinder" src="https://lit-atoll-81167.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
-                    {this.state.open === "Tappd" ? <iframe title="Tappd" src="https://tappd-ct.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
+                    {this.state.open === "Chicken Tinder" ? 
+                        <ProjectContent
+                            title="Chicken Tinder"
+                            date="3/15 - 6/1"
+                            tech="(MongoDB, Javascript, Express, React, Node, Mapbox, Yelp API)"
+                            description="A single page app designed for groups to vote on a restaurant for their next gathering based on group location and filters."
+                            icon=""
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/CTDemo.gif"
+                            keyfeatures={["Chicken Tinder allows users to create a group and select a location in San Francisco. The group creator can then search for other users to add to their group, as well as determine any initial food restrictions they would like their group to be aware of, whether the bill would be split among all members, and the price range they would like to filter by. Data from restaurants local to the area is then added to the group. The creator will also set a deadline for the members to vote.",
+                                        "All group members can then log in to vote on each one of the pre-selected venues. Users can access any group they have been added to to either vote (if the group is ongoing) or view results (if the group deadline has passed).",
+                                        "Once all the group members have voted or the deadline is reached, the top 3 venues are displayed, based on number of votes."
+                                        ]}
+                            challenges={["Responsive CSS design", "mplementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
+                            github=""
+                            livelink=""
+                        />
+                    : null }
+                    {/* {this.state.open === "Tappd" ? <iframe title="Tappd" src="https://tappd-ct.herokuapp.com/#/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Wiki-Clicker" ? <iframe title="Wiki-Clicker" src="http://christhompson.online/WikiClicker/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Instagram Clone" ? <iframe title="Instagram Clone" src="https://reactinstagram-c443e.web.app/" height="100%" width="100%" frameBorder="0" ></iframe> : null }
                     {this.state.open === "Paralax-Scroll" ? <iframe title="Paralax-Scroll" src="http://christhompson.online/Paralax-Scroll/" height="100%" width="100%" frameBorder="0" ></iframe> : null }

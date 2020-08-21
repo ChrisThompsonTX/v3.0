@@ -1,7 +1,18 @@
 import React from 'react'
 import './projectcontent.css'
 
-export default function ProjectContent({title, tech, date, description, icon, gif}) {
+export default function ProjectContent({
+                                    title, 
+                                    tech, 
+                                    date, 
+                                    description, 
+                                    icon, 
+                                    gif, 
+                                    keyfeatures, 
+                                    challenges,
+                                    github,
+                                    livelink
+                                    }) {
     return (
         <div className="projectcontent">
             <div className="projectcontent__header">
@@ -11,9 +22,15 @@ export default function ProjectContent({title, tech, date, description, icon, gi
                     <h3>{tech}</h3>
                 </div>
                 <div className="projectcontent__headerright">
-                    <h3>{date}</h3>
-                    <div className="projectcontent__iconcontainer">
-                        <img src={icon} alt="projecticon" />
+                    <div className="projectcontent__headerrighttop">
+                        <h3>{date}</h3>
+                        <div className="projectcontent__iconcontainer">
+                            <img src={icon} alt="projecticon" />
+                        </div>
+                    </div>
+                    <div className="projectcontent__headerrightbottom">
+                        <div className="projectcontent__button"><a className="projectcontent__buttonlink" href={github}>GITHUB</a></div>
+                        <div className="projectcontent__button"><a className="projectcontent__buttonlink" href={livelink}>DEMO</a></div>
                     </div>
                 </div>
             </div>
@@ -21,7 +38,30 @@ export default function ProjectContent({title, tech, date, description, icon, gi
                 <div className="projectcontent_gifcontainer">
                     <img src={gif} alt="projectanimation" />
                 </div>
-                asdklfjalksdjfkljsdfkljaslkdfjklasjfkljasklj klajsdlk fjakls jfkljsajkf hajkhalkjdhjkads fhsahfkjasdfasdk fals jasj f;ja jkfjas jdfja;l jsdlfjajsdkfja slkjkaj;ajf
+                {keyfeatures ? 
+                    <div className="projectcontent__keyfeatures">
+                        <h2>Key Features</h2>
+                        <p>{keyfeatures.map((feature) => (
+                            <div className="projectcontent__feature">
+                                {feature}
+                            </div>
+                        ))}</p>
+                    </div>
+                :
+                null
+                }
+                {challenges ? 
+                    <div className="projectcontent__challenges">
+                        <h2>Challenges</h2>
+                        <ul>{challenges.map((challenge) => (
+                            <li className="projectcontent_challenge">
+                                {challenge}
+                            </li>
+                        ))}</ul>
+                    </div>
+                :
+                null
+                }
             </div>
         </div>
     )

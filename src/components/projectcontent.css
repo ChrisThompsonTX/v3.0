@@ -14,6 +14,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #E5E5E5;
+    position: relative;
 }
 
 .projectcontent__headerleft > h1 {
@@ -36,6 +37,12 @@
 .projectcontent_gifcontainer {
     width: 45%;
     float: right;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
 }
 
 .projectcontent__iconcontainer {
@@ -43,10 +50,17 @@
     height: 55px;
     width: 55px;
     border-radius: 35px;
+    margin-left: 8px;
 }
 
-.projectcontent__headerright {
+.projectcontent__headerrighttop {
     display: flex;
+}
+
+.projectcontent__headerrighttop > h3 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #909090;
 }
 
 .projectcontent__body {
@@ -55,8 +69,61 @@
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow: scroll;
 }
 
 .projectcontent_gifcontainer > img {
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.projectcontent__keyfeatures > h2, .projectcontent__challenges > h2 {
+    border-bottom: 1px solid #E5E5E5;
+    width: 50%;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.projectcontent__feature {
+    padding-bottom: 10px;
+    font-weight: 400;
+    width: 50%;
+    font-size: 12px;
+}
+
+.projectcontent_challenge {
+    list-style-type: circle;
+    margin-left: 30px;
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.projectcontent__headerrightbottom {
+    display: flex;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.projectcontent__button {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #0379FF;
+    color: white;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.projectcontent__button > a {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.projectcontent__buttonlink {
+    color: white;
 }
