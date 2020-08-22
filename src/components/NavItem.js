@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function NavItem(props) {
+function NavItem({menu, setMenu, children, title}) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -10,11 +10,12 @@ function NavItem(props) {
                 onClick={(e) => {
                     e.preventDefault();
                     setOpen(!open)
+                    setMenu(title)
                 }}>
-                {props.title}
+                {title}
             </a>
 
-            {open && props.children}
+            {open && menu === title ? children : null}
         </li>
     );
 }

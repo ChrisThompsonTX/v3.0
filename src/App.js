@@ -19,6 +19,7 @@ import MobileProjects from './components/MobileProjects';
 
 function App() {
   const [open, setOpen] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   return (
     <div>
@@ -36,11 +37,15 @@ function App() {
       <div className="v3__desktop">
         <Navbar>
           <NavItem title={<BoltIcon />} />
-          <NavItem title={<h1>Chris Thompson</h1>}>
+          <NavItem menu={menu} setMenu={setMenu} title="Chris Thompson">
             <DropdownMenu setOpen={setOpen} />
           </NavItem>
-          <NavItem title="View" />
-          <NavItem title="Contact" />
+          <NavItem menu={menu} setMenu={setMenu} title="View">
+            <div> wasup</div>
+          </NavItem>
+          <NavItem menu={menu} setMenu={setMenu} title="Contact" >
+              <div> sup </div>
+          </NavItem>
         </Navbar>
         <div className="desktop" >
           <Icon
