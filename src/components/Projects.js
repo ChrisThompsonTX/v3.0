@@ -8,7 +8,7 @@ class Projects extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            open: false
+            open: "Chicken Tinder"
         }
         this.setOpen = this.setOpen.bind(this)
     }
@@ -84,7 +84,7 @@ class Projects extends React.Component {
                                         "All group members can then log in to vote on each one of the pre-selected venues. Users can access any group they have been added to to either vote (if the group is ongoing) or view results (if the group deadline has passed).",
                                         "Once all the group members have voted or the deadline is reached, the top 3 venues are displayed, based on number of votes."
                                         ]}
-                            challenges={["Responsive CSS design", "mplementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
+                            challenges={["Responsive CSS design", "Implementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
                             github="https://github.com/hkryucr/mern-ct"
                             livelink="https://lit-atoll-81167.herokuapp.com/#/"
                         />
@@ -114,11 +114,10 @@ class Projects extends React.Component {
                             description="A game utilizing Javascripts D3 library and Wikipedia API to navigate from one starter page to another in 10 link “clicks”"
                             icon=""
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/WikiClicker.mp4"
-                            keyfeatures={["Secure User Authorization using BCrypt hashing",
-                                "User auth errors are separated and displayed over the proper field",
-                                "Breweries are displayed in a list as links to a page displaying all their beers"
+                            keyfeatures={["Wiki-Clicker is designed as a game using the Wikipedia API to crawl across different pages. After inputting a search, a node is spawned with connections to all the links its given page. By pulling a node you will search that link and will spawn more nodes. The goal of the game is to get from one page to another and bridge the gap",
+                            "When a call is put out to the API the resulting definition is displayed on the right. There is also a progress bar along the top that is updated as the API call is sent, recieved, and processed."
                             ]}
-                            challenges={["Responsive CSS design", "mplementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
+                            challenges={["This was my first experience using Javascripts D3.js library and deep diving into a libraries docs", "I learned a great deal about organization and splitting different processes into separate files in the repo", "I also wanted to closely mimic the Wikipedia design in its simplicity and funcionality"]}
                             github="https://github.com/ChrisThompsonTX/WikiClicker"
                             livelink="http://christhompson.online/WikiClicker/"
                         />
@@ -131,11 +130,9 @@ class Projects extends React.Component {
                             description="Full Instagram clone with user auth and backend using Google Firebase"
                             icon=""
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Instagram.mp4"
-                            keyfeatures={["",
-                                "",
-                                ""
+                            keyfeatures={["Complete with User Auth and updating live with React Hooks suppored by a firebase backend, this Instagram Clone allows users to post and comment while being updated in real time.",
                             ]}
-                            challenges={["", "", "", ""]}
+                            challenges={["This was my first experience using Google Firebase which makes user auth and database setup streamlined and quick", "This was also my first expereince deep diving into using React Hooks which I employed to update incoming posts as they are posted", "I used the setState hook to keep upload info locally to be deployed to firebase upon submit"]}
                             github="https://github.com/ChrisThompsonTX/react-instagram"
                             livelink="https://reactinstagram-c443e.web.app/"
                         />
@@ -148,11 +145,9 @@ class Projects extends React.Component {
                             description="A first attempt at building out a Paralax Scroll"
                             icon=""
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ParalaxScroll.mp4"
-                            keyfeatures={["",
-                                "",
-                                ""
+                            keyfeatures={["Paralax Scroll is a demo of the use of event listeners and ids to create simple CSS animations on scroll","When the user scrolls, separate listeners on different image layers scroll in different directions and speeds set in index.html"
                             ]}
-                            challenges={["", "", "", ""]}
+                            challenges={["Paralax Scroll is a practice for a website made for my Motehrs birthday in order to create an interactive scroll header"]}
                             github="https://github.com/ChrisThompsonTX/Paralax-Scroll"
                             livelink="http://christhompson.online/Paralax-Scroll/"
                         />
@@ -165,11 +160,10 @@ class Projects extends React.Component {
                             description="React app to keep track of total expenses using React Hooks"
                             icon=""
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ExpenseTracker.mp4"
-                            keyfeatures={["",
-                                "",
-                                ""
+                            keyfeatures={["React Expense Tracker allows users to locally add expenses and income variables to a list",
+                                "By threading user input data to separate React Components, I was able to update multiple components at once while simultaneously performing simple math and css reactions to inputs."
                             ]}
-                            challenges={["", "", "", ""]}
+                            challenges={["This expense tracker was a practice in system design, I needed to map out which components needed access to state and parse it out accordingly", "Depending on the users input I applied different sets of CSS to elements that could be created or deleted instantly"]}
                             github="https://github.com/ChrisThompsonTX/React-Expense-Tracker"
                             livelink="http://christhompson.online/React-Expense-Tracker/"
                         />
@@ -182,11 +176,13 @@ class Projects extends React.Component {
                             description="A mobile friendly portfolio site made for my moms art for her Birthday"
                             icon=""
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/AmityLianne.mp4"
-                            keyfeatures={["",
-                                "",
-                                ""
+                            keyfeatures={["Amity Lianne is an ongoing project and birthday portfolio project for my Mom.",
+                                "Currently it displays recent artwork and breif descriptions of the Task that was assigned for each.",
                             ]}
-                            challenges={["", "", "", ""]}
+                            challenges={["Utilizing a Paralax Scroll on the header was an initial challenge and will soon be updated", 
+                                "Future updates will change this into a full react app allowing direct posting of new art.", 
+                                "One challenge to be updated is implementing a masonry gallery at the bottom, currently flexbox is used to distinguish individual rows, with the implementation of some javascript I will add a more dynamic layout to the artwork", 
+                                ]}
                             github="https://github.com/ChrisThompsonTX/AmityLianne.com"
                             livelink="https://www.amitylianne.com/"
                         />
