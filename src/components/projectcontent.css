@@ -17,8 +17,27 @@
     position: relative;
 }
 
+@keyframes animate {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
 .projectcontent__headerleft > h1 {
     font-size: 40px;
+    background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
+    /* background-image: linear-gradient(to right, #ea5455,#ffd460,#f07b3f,#2d4059); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    background-size: 1000%;
+    color: transparent;
 }
 
 .projectcontent__headerleft > h2 {
