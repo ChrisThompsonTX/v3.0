@@ -93,7 +93,7 @@ class Projects extends React.Component {
                         <ProjectContent
                             title="Tappd"
                             date="2/1 - 5/10"
-                            tech="(Ruby on Rails, React, Redux, AWS)"
+                            tech="(Ruby on Rails, React, Redux, AWS, Heroku)"
                             description="A social media platform centered around beer utilizing a Ruby on Rails backend and React and Redux frontend."
                             icon=""
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Tappd.mp4"
@@ -102,8 +102,8 @@ class Projects extends React.Component {
                                             "Breweries are displayed in a list as links to a page displaying all their beers"
                                         ]}
                             challenges={["Responsive CSS design", "mplementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
-                            github="https://github.com/hkryucr/mern-ct"
-                            livelink="https://lit-atoll-81167.herokuapp.com/#/"
+                            github="https://github.com/ChrisThompsonTX/Tappd"
+                            livelink="https://tappd-ct.herokuapp.com/"
                         />
                     : null }
                     {this.state.open === "Wiki-Clicker" ? 
@@ -113,31 +113,31 @@ class Projects extends React.Component {
                             tech="(Javascript, D3, Regex)"
                             description="A game utilizing Javascripts D3 library and Wikipedia API to navigate from one starter page to another in 10 link “clicks”"
                             icon=""
-                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Tappd.mp4"
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/WikiClicker.mp4"
                             keyfeatures={["Secure User Authorization using BCrypt hashing",
                                 "User auth errors are separated and displayed over the proper field",
                                 "Breweries are displayed in a list as links to a page displaying all their beers"
                             ]}
                             challenges={["Responsive CSS design", "mplementing search functionality with auto-complete", "Integrating the data with Mapbox API", "Building demo functionalities with a random user and a random group", "Designing user-friendly UI/UX using modals and a carousel", "Creating interactivities with hover effects"]}
-                            github="https://github.com/hkryucr/mern-ct"
-                            livelink="https://lit-atoll-81167.herokuapp.com/#/"
+                            github="https://github.com/ChrisThompsonTX/WikiClicker"
+                            livelink="http://christhompson.online/WikiClicker/"
                         />
                     : null }
                     {this.state.open === "Instagram Clone" ? 
                         <ProjectContent
                             title="Instagram Clone"
                             date="8/1 - 8/10"
-                            tech="(Javascript, React Hooks, Firebase)"
+                            tech="(Javascript, React, React Hooks, Firebase)"
                             description="Full Instagram clone with user auth and backend using Google Firebase"
                             icon=""
-                            gif=""
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Instagram.mp4"
                             keyfeatures={["",
                                 "",
                                 ""
                             ]}
                             challenges={["", "", "", ""]}
-                            github=""
-                            livelink=""
+                            github="https://github.com/ChrisThompsonTX/react-instagram"
+                            livelink="https://reactinstagram-c443e.web.app/"
                         />
                     : null }
                     {this.state.open === "Paralax-Scroll" ? 
@@ -147,14 +147,14 @@ class Projects extends React.Component {
                             tech="(Javascript, HTML, CSS)"
                             description="A first attempt at building out a Paralax Scroll"
                             icon=""
-                            gif=""
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ParalaxScroll.mp4"
                             keyfeatures={["",
                                 "",
                                 ""
                             ]}
                             challenges={["", "", "", ""]}
-                            github=""
-                            livelink=""
+                            github="https://github.com/ChrisThompsonTX/Paralax-Scroll"
+                            livelink="http://christhompson.online/Paralax-Scroll/"
                         />
                     : null }
                     {this.state.open === "React Expense Tracker" ? 
@@ -164,14 +164,14 @@ class Projects extends React.Component {
                             tech="(React, Hooks, Javascript)"
                             description="React app to keep track of total expenses using React Hooks"
                             icon=""
-                            gif=""
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ExpenseTracker.mp4"
                             keyfeatures={["",
                                 "",
                                 ""
                             ]}
                             challenges={["", "", "", ""]}
-                            github=""
-                            livelink=""
+                            github="https://github.com/ChrisThompsonTX/React-Expense-Tracker"
+                            livelink="http://christhompson.online/React-Expense-Tracker/"
                         />
                     : null }
                     {this.state.open === "Amity Lianne" ? 
@@ -181,14 +181,14 @@ class Projects extends React.Component {
                             tech="(Javascript, HTML, CSS)"
                             description="A mobile friendly portfolio site made for my moms art for her Birthday"
                             icon=""
-                            gif=""
+                            gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/AmityLianne.mp4"
                             keyfeatures={["",
                                 "",
                                 ""
                             ]}
                             challenges={["", "", "", ""]}
-                            github=""
-                            livelink=""
+                            github="https://github.com/ChrisThompsonTX/AmityLianne.com"
+                            livelink="https://www.amitylianne.com/"
                         />
                     : null }
                 </div>
