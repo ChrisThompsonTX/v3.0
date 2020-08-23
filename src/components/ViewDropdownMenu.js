@@ -31,7 +31,8 @@ function ViewDropdownMenu(props) {
                 timeout={500}
                 classNames="menu-primary"
                 unmountOnExit
-                onEnter={calcHeight}>
+                onEnter={calcHeight}
+            >
                 <div className="menu">
                     <DropdownItem onClick={() => props.setOpen("About Me")}>About Chris Thompson</DropdownItem>
                     <DropdownItem

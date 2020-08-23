@@ -2,13 +2,14 @@
 .mobilecontact {
     position: fixed;
     background: tomato;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     flex-direction: column;
     clip-path: circle(0px at 35% 90%);
     -webkit-clip-path: circle(0px at 35% 90%);
     transition: all 0.5s ease-out;
     pointer-events: none;
+    padding-bottom: 20vh;
 }
 
 .mobilecontact.open {
