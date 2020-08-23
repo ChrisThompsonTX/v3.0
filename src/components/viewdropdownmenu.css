@@ -1,0 +1,16 @@
+
+.view__dropdown {
+  position: absolute;
+  top: 30px;
+  left: 296px;
+  width: 280px;
+  transform: translateX(-45%);
+  background-color: rgba(37,37,38,0.8);
+  border: var(--border);
+  border-top: none;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding: .2rem 0;
+  overflow: hidden;
+  transition: height var(--speed) ease;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './index.css';
 
 import DropdownMenu from './components/DropdownMenu';
+import ViewDropdownMenu from './components/ViewDropdownMenu';
 import OSDock from './components/OSDock';
 import Icon from './components/Icon';
 import Window from './components/Window';
@@ -41,7 +42,7 @@ function App() {
             <DropdownMenu setOpen={setOpen} />
           </NavItem>
           <NavItem menu={menu} setMenu={setMenu} title="View">
-            <div> wasup</div>
+            <ViewDropdownMenu />
           </NavItem>
           <NavItem menu={menu} setMenu={setMenu} title="Contact" >
               <div> sup </div>

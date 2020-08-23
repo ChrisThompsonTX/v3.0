@@ -6,7 +6,7 @@ function NavItem({menu, setMenu, children, title}) {
     return (
         <li className="nav-item">
             <a href="/"
-                className={open ? "active icon-button" : "icon-button"}
+                className={open && menu === title ? "active icon-button" : "icon-button"}
                 onClick={(e) => {
                     e.preventDefault();
                     setOpen(!open)
