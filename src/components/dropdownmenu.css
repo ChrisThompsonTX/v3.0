@@ -73,3 +73,31 @@
   transform: translateX(110%);
   transition: all var(--speed) ease;
 }
+
+.fa-js-square {
+  color: #F1DA1B;
+}
+
+.fa-react {
+  color: #5DD4F5;
+}
+
+.fa-gem {
+  color: #E61621;
+}
+
+.fa-python {
+  color: #2F97F5;
+}
+
+.fa-database {
+  color: #0076F7;
+}
+
+.fa-node {
+  color: #87C000;
+}
+
+.fa-aws {
+  color: #F2941C;
+}
