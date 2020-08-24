@@ -6,17 +6,22 @@ function Contact() {
         <div className="contact">
             <div className="contact__left">
                 <h1>Contact Me</h1>
-                <form className="contact__form">
+                <form 
+                    className="contact__form"
+                    method="POST"
+                    data-email="from_email@example.com"
+                    action="https://script.google.com/macros/s/AKfycbyYqm8-a57BzgEIkPLIjGhoEQWELXzaryG69Srw/exec"
+                >
                     <div className="form__top">
                         <div className="form">
-                            <input type="text" name="name" autoComplete="off" required />
+                            <input type="text" id="name" name="name" autoComplete="off" required />
                             <label htmlFor="name" className="label-name">
                                 <span className="content-name">Name</span>
                             </label>
                         </div>
                         <div className="spacer"/>
                         <div className="form">
-                            <input type="text" name="name" autoComplete="off" required />
+                            <input type="text" id="email" name="email" autoComplete="off" required />
                             <label htmlFor="name" className="label-name">
                                 <span className="content-name">E-mail</span>
                             </label>
@@ -24,7 +29,7 @@ function Contact() {
                     </div>
                     <div className="form__bottom">
                         <div className="form">
-                            <textarea type="text" name="name" autoComplete="off" required />
+                            <textarea id="message" type="text" name="message" autoComplete="off" required />
                             <label htmlFor="name" className="label-name">
                                 <span className="content-name">Message</span>
                             </label>
