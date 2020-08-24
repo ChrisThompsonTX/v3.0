@@ -30,12 +30,14 @@ class Window extends React.Component {
                                 <div onClick={closeWindow} className="window__close">
                                     <i className="fas fa-times fa-xs"></i>
                                 </div>
-                                <div className="window__minimize">
+                                <div className="window__blank"></div>
+                                <div className="window__blank"></div>
+                                {/* <div className="window__minimize">
                                     <i className="fas fa-window-minimize fa-xs"></i>
                                 </div>
                                 <div className="window__expand">
                                     <i className="fas fa-expand-alt fa-xs"></i>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="window__name">{open}</div>
                         </div>

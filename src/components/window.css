@@ -21,6 +21,7 @@
     border-top-right-radius: var(--border-radius);
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     height: 5%;
     /* justify-content: space-between; */
 }
@@ -29,7 +30,7 @@
     color: white;
     pointer-events: none;
     align-self: center;
-    flex: 1;
+    padding: 2px 0px;
 }
 
 .window__body {
@@ -46,9 +47,9 @@
 
 .window__buttons {
     padding: 2px;
-    position: relative;
+    position: absolute;
     display: flex;
-    flex: .8;
+    left: 0;
 }
 
 .window__buttons div {
@@ -78,7 +79,12 @@
     color: #84020B;
 }
 
-.window__minimize {
+.window__blank {
+    background-color: #696A6E;
+    border: 1px solid #505050;
+}
+
+/* .window__minimize {
     background-color: #FDBC40;
     border: 1px solid #985815;
 }
@@ -95,4 +101,4 @@
 .fa-expand-alt {
     color: #10640F;
 
-}
+} */
