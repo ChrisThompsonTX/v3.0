@@ -84,7 +84,7 @@ class Projects extends React.Component {
                             date="3/15 - 6/1"
                             tech="(MongoDB, Javascript, Express, React, Node, Mapbox, Yelp API)"
                             description="A single page app designed for groups to vote on a restaurant for their next gathering based on group location and filters."
-                            icon=""
+                            icon="https://images.squarespace-cdn.com/content/v1/581e1e7c4402439b5609162e/1542727757101-Z3Y79GLV4QH14HTNDYQQ/ke17ZwdGBToddI8pDm48kI7GvguS4qYzo7kJvilBtoB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQRiQY3S_5dElDtXG-76eDZPcnvEIcWgwKujpGdHiJiUJvwGh1qtNWvMhYKnvaKhbA/Pipeline+Icons_chicken.png?format=1500w"
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/CT_trimmed.mp4.mp4"
                             keyfeatures={["Chicken Tinder allows users to create a group and select a location in San Francisco. The group creator can then search for other users to add to their group, as well as determine any initial food restrictions they would like their group to be aware of, whether the bill would be split among all members, and the price range they would like to filter by. Data from restaurants local to the area is then added to the group. The creator will also set a deadline for the members to vote.",
                                         "All group members can then log in to vote on each one of the pre-selected venues. Users can access any group they have been added to to either vote (if the group is ongoing) or view results (if the group deadline has passed).",

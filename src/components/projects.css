@@ -37,3 +37,7 @@
     padding-left: 14px;
     position: sticky;
 }
+
+.projects__leftheader > h4 {
+    padding-right: 8px;
+}
