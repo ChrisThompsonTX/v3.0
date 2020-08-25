@@ -37,7 +37,7 @@ function App() {
       </div>
       <div className="v3__desktop">
         <Navbar>
-          <NavItem title={<BoltIcon />} />
+          <NavItem menu={menu} setMenu={setMenu} title={<BoltIcon />} />
           <NavItem menu={menu} setMenu={setMenu} title="Chris Thompson">
             <DropdownMenu setOpen={setOpen} />
           </NavItem>

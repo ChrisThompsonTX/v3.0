@@ -25,25 +25,25 @@ class OSDock extends React.Component {
                     </Dock.Item>
                     <Dock.Item className="dock__icon" onClick={() => null}>
                         <h1>Linked In</h1>
-                        <a href="https://www.linkedin.com/in/chris-thompson-832015179/">
+                        <a href="https://www.linkedin.com/in/chris-thompson-832015179/" rel="noopener noreferrer" target="_blank">
                             <img draggable="false" alt="Linked In" src="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/linkedin.png" />
                         </a>
                     </Dock.Item>
                     <Dock.Item className="dock__icon" onClick={() => null}>
                         <h1>AngelList</h1>
-                        <a href="https://angel.co/u/christopher-thio-thompson">
+                        <a href="https://angel.co/u/christopher-thio-thompson" target="_blank" rel="noopener noreferrer" >
                             <img draggable="false" alt="AngelList" src="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/angellist.png" />
                         </a>
                     </Dock.Item>
                     <Dock.Item className="dock__icon" onClick={() => null}>
                         <h1>GitHub</h1>
-                        <a href="https://github.com/ChrisThompsonTX">
+                        <a href="https://github.com/ChrisThompsonTX" target="_blank" rel="noopener noreferrer" >
                             <img draggable="false" alt="GitHub" src="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/github.png" />
                         </a>
                     </Dock.Item>
                     <Dock.Item className="dock__icon" onClick={() => null}>
                         <h1>My Resume</h1>
-                        <a href="https://docs.google.com/document/d/e/2PACX-1vRpvdKt_hooSkI6gwJxHUgWBpVGIW1X9lEM99CrfLY3doCpaxetAwjuFVi5937Qt8Bohv27XBY47V85/pub">
+                        <a href="https://docs.google.com/document/d/e/2PACX-1vRpvdKt_hooSkI6gwJxHUgWBpVGIW1X9lEM99CrfLY3doCpaxetAwjuFVi5937Qt8Bohv27XBY47V85/pub" target="_blank" rel="noopener noreferrer" >
                             <img draggable="false" alt="My Resume" src="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/resume.png" />
                         </a>
                     </Dock.Item>

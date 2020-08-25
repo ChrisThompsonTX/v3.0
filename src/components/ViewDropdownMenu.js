@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import { ReactComponent as BoltIcon } from '../icons/bolt.svg';
-import { ReactComponent as CogIcon } from '../icons/cog.svg';
-import { ReactComponent as ChevronIcon } from '../icons/chevron.svg';
-import { ReactComponent as ArrowIcon } from '../icons/arrow.svg';
+// import { ReactComponent as BoltIcon } from '../icons/bolt.svg';
+// import { ReactComponent as CogIcon } from '../icons/cog.svg';
+// import { ReactComponent as ChevronIcon } from '../icons/chevron.svg';
+// import { ReactComponent as ArrowIcon } from '../icons/arrow.svg';
 import './viewdropdownmenu.css'
 
-import DropdownItem from './DropdownItem'
+// import DropdownItem from './DropdownItem'
 
 function ViewDropdownMenu(props) {
     const [activeMenu, setActiveMenu] = useState('main');

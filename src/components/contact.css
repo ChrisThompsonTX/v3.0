@@ -16,10 +16,15 @@
 }
 
 .contact__left h1 {
-    font-size: 2rem;
-    padding-bottom: 20px;
-    color: #F7F8F9;
+    padding-bottom: 40px;
     font-weight: 400;
+    font-size: 40px;
+    background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    background-size: 1000%;
+    color: transparent;
 }
 
 .contact__right {
