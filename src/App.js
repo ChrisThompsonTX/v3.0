@@ -39,7 +39,7 @@ function App() {
         <Navbar>
           <NavItem menu={menu} setMenu={setMenu} title={<BoltIcon />} />
           <NavItem menu={menu} setMenu={setMenu} title="Chris Thompson">
-            <DropdownMenu setOpen={setOpen} />
+            <DropdownMenu open={open} setOpen={setOpen} />
           </NavItem>
           <NavItem menu={menu} setMenu={setMenu} title="View">
             <ViewDropdownMenu />

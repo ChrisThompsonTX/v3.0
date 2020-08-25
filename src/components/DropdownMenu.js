@@ -8,7 +8,7 @@ import './dropdownmenu.css'
 
 import DropdownItem from './DropdownItem'
 
-function DropdownMenu(props) {
+function DropdownMenu({setOpen, open}) {
     const [activeMenu, setActiveMenu] = useState('main');
     const [menuHeight, setMenuHeight] = useState(null);
     const dropdownRef = useRef(null);
@@ -33,7 +33,7 @@ function DropdownMenu(props) {
                 unmountOnExit
                 onEnter={calcHeight}>
                 <div className="menu">
-                    <DropdownItem onClick={() => props.setOpen("About Me")}>About Chris Thompson</DropdownItem>
+                    <DropdownItem onClick={() => open ? setOpen(false) : setOpen("About Me")}>About Chris Thompson</DropdownItem>
                     <DropdownItem 
                         leftIcon={<CogIcon />}
                         rightIcon={<ChevronIcon />}
