@@ -50,6 +50,7 @@
     position: absolute;
     display: flex;
     left: 0;
+    cursor: pointer;
 }
 
 .window__buttons div {
