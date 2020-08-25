@@ -84,7 +84,7 @@ class Projects extends React.Component {
                             date="3/15 - 6/1"
                             tech="(MongoDB, Javascript, Express, React, Node, Mapbox, Yelp API)"
                             description="A single page app designed for groups to vote on a restaurant for their next gathering based on group location and filters."
-                            icon="https://images.squarespace-cdn.com/content/v1/581e1e7c4402439b5609162e/1542727757101-Z3Y79GLV4QH14HTNDYQQ/ke17ZwdGBToddI8pDm48kI7GvguS4qYzo7kJvilBtoB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQRiQY3S_5dElDtXG-76eDZPcnvEIcWgwKujpGdHiJiUJvwGh1qtNWvMhYKnvaKhbA/Pipeline+Icons_chicken.png?format=1500w"
+                            icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ChickenIcon.png"
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/CT_trimmed.mp4.mp4"
                             keyfeatures={["Chicken Tinder allows users to create a group and select a location in San Francisco. The group creator can then search for other users to add to their group, as well as determine any initial food restrictions they would like their group to be aware of, whether the bill would be split among all members, and the price range they would like to filter by. Data from restaurants local to the area is then added to the group. The creator will also set a deadline for the members to vote.",
                                         "All group members can then log in to vote on each one of the pre-selected venues. Users can access any group they have been added to to either vote (if the group is ongoing) or view results (if the group deadline has passed).",
@@ -101,7 +101,7 @@ class Projects extends React.Component {
                             date="2/1 - 5/10"
                             tech="(Ruby on Rails, React, Redux, AWS, Heroku)"
                             description="A social media platform centered around beer utilizing a Ruby on Rails backend and React and Redux frontend."
-                            icon=""
+                            icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/TappdIcon.png"
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Tappd.mp4"
                             keyfeatures={["Secure User Authorization using BCrypt hashing",
                                             "User auth errors are separated and displayed over the proper field",
@@ -118,7 +118,7 @@ class Projects extends React.Component {
                             date="4/19 - 5/2"
                             tech="(Javascript, D3, Regex)"
                             description="A game utilizing Javascripts D3 library and Wikipedia API to navigate from one starter page to another in 10 link “clicks”"
-                            icon=""
+                            icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/WikiIcon.png"
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/WikiClicker.mp4"
                             keyfeatures={["Wiki-Clicker is designed as a game using the Wikipedia API to crawl across different pages. After inputting a search, a node is spawned with connections to all the links its given page. By pulling a node you will search that link and will spawn more nodes. The goal of the game is to get from one page to another and bridge the gap",
                             "When a call is put out to the API the resulting definition is displayed on the right. There is also a progress bar along the top that is updated as the API call is sent, recieved, and processed."
@@ -134,7 +134,7 @@ class Projects extends React.Component {
                             date="8/1 - 8/10"
                             tech="(Javascript, React, React Hooks, Firebase)"
                             description="Full Instagram clone with user auth and backend using Google Firebase"
-                            icon=""
+                            icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/InstaIcon.png"
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/Instagram.mp4"
                             keyfeatures={["Complete with User Auth and updating live with React Hooks suppored by a firebase backend, this Instagram Clone allows users to post and comment while being updated in real time.",
                             ]}
@@ -149,7 +149,7 @@ class Projects extends React.Component {
                             date="6/29 - 7/1"
                             tech="(Javascript, HTML, CSS)"
                             description="A first attempt at building out a Paralax Scroll"
-                            icon=""
+                            icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ParalxIcon.png"
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ParalaxScroll.mp4"
                             keyfeatures={["Paralax Scroll is a demo of the use of event listeners and ids to create simple CSS animations on scroll","When the user scrolls, separate listeners on different image layers scroll in different directions and speeds set in index.html"
                             ]}
@@ -164,7 +164,7 @@ class Projects extends React.Component {
                             date="6/25 - 6/27"
                             tech="(React, Hooks, Javascript)"
                             description="React app to keep track of total expenses using React Hooks"
-                            icon=""
+                            icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ExpenseIcon.png"
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/ExpenseTracker.mp4"
                             keyfeatures={["React Expense Tracker allows users to locally add expenses and income variables to a list",
                                 "By threading user input data to separate React Components, I was able to update multiple components at once while simultaneously performing simple math and css reactions to inputs."
@@ -180,7 +180,7 @@ class Projects extends React.Component {
                             date="6/29 - 7/10"
                             tech="(Javascript, HTML, CSS)"
                             description="A mobile friendly portfolio site made for my moms art for her Birthday"
-                            icon=""
+                            icon="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/AmityIcon.png"
                             gif="https://tappd-seeds.s3-us-west-1.amazonaws.com/v3/AmityLianne.mp4"
                             keyfeatures={["Amity Lianne is an ongoing project and birthday portfolio project for my Mom.",
                                 "Currently it displays recent artwork and breif descriptions of the Task that was assigned for each.",
