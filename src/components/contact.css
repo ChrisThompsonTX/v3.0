@@ -16,7 +16,7 @@
 }
 
 .contact__left h1 {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     font-weight: 400;
     font-size: 40px;
     background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
@@ -25,6 +25,7 @@
     animation: animate 10s linear infinite;
     background-size: 1000%;
     color: transparent;
+    /* border-bottom: 2px solid grey; */
 }
 
 .contact__right {
