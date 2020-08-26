@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.css';
 
 import DropdownMenu from './components/DropdownMenu';
-import ViewDropdownMenu from './components/ViewDropdownMenu';
+// import ViewDropdownMenu from './components/ViewDropdownMenu';
 import OSDock from './components/OSDock';
 import Icon from './components/Icon';
 import Window from './components/Window';
