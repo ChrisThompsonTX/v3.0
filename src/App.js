@@ -24,6 +24,7 @@ function App() {
 
   return (
     <div>
+
       <div className="v3__mobile">
         <MobileAboutMe open={open} />
         <MobileContact open={open} />
@@ -35,6 +36,7 @@ function App() {
 
 
       </div>
+
       <div className="v3__desktop">
         <Navbar>
           <NavItem menu={menu} setMenu={setMenu} title={<BoltIcon />} />
@@ -42,10 +44,9 @@ function App() {
             <DropdownMenu open={open} setOpen={setOpen} />
           </NavItem>
           <NavItem menu={menu} setMenu={setMenu} title="View">
-            <ViewDropdownMenu />
+            {/* <ViewDropdownMenu /> */}
           </NavItem>
           <NavItem menu={menu} setMenu={setMenu} title="Contact" >
-              <div> sup </div>
           </NavItem>
         </Navbar>
         <div className="desktop" >
@@ -81,6 +82,7 @@ function App() {
         </div>
         <OSDock open={open} setOpen={setOpen} />
       </div>
+
     </div>
   );
 }

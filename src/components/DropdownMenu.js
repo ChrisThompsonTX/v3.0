@@ -33,7 +33,11 @@ function DropdownMenu({setOpen, open}) {
                 unmountOnExit
                 onEnter={calcHeight}>
                 <div className="menu">
-                    <DropdownItem onClick={() => open ? setOpen(false) : setOpen("About Me")}>About Chris Thompson</DropdownItem>
+                    <DropdownItem>
+                        <span onClick={() => open ? setOpen(false) : setOpen("About Me")}>
+                            About Chris Thompson
+                        </span>
+                    </DropdownItem>
                     <DropdownItem 
                         leftIcon={<CogIcon />}
                         rightIcon={<ChevronIcon />}
