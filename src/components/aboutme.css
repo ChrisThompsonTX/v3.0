@@ -52,6 +52,7 @@
     background-color: #313437;
     flex: 1.3;
     padding: 5vw;
+    overflow: scroll;
 }
 
 .aboutme__name {

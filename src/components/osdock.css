@@ -30,15 +30,20 @@
     border-radius: var(--border-radius);
     padding: 4px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dock__icon:hover h1 {
     opacity: 1;
-    transition: all .5s;
+    font-size: 1rem;
+    transition: all .2s;
 }
 
 .dock__icon img {
     max-height: 95%;
     max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
