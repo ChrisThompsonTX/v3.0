@@ -1,6 +1,6 @@
 
 .aboutme {
-    background-color: white;
+    background-color: #313437;
     height: 100%;
     display: flex;
     color: white;
@@ -51,14 +51,16 @@
 .aboutme__right {
     background-color: #313437;
     flex: 1.3;
-    padding: 5vw;
-    overflow: scroll;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .aboutme__name {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    margin-top: 10%;
 }
 
 .aboutme__name h1 {
@@ -79,13 +81,25 @@
 }
 
 .aboutme__body {
-    padding-top: 25px;
+    margin-top: 25px;
     font-size: 1rem;
     line-height: 1.4rem;
+    overflow: scroll;
+    margin-right: 50px;
+    min-height: 100px;
+    position: absolute;
+    bottom: 50px;
+    top: 25%;
 }
 
 .aboutme__footer {
     display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    min-height: 50px;
+    background-color: #313437;
+    width: 100%;
 }
 
 .aboutme__footer div{
@@ -97,4 +111,5 @@
     padding: 0px 10px;
     border-radius: 3px;
     cursor: pointer;
+    max-height: 16px;
 }
