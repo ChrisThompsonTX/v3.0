@@ -75,6 +75,20 @@ class Projects extends React.Component {
                             description="A mobile friendly portfolio site made for my moms art for her Birthday"
                             setOpen={() => this.setOpen("Amity Lianne")}
                         />
+                        <ProjectItem 
+                            title="Amazon Clone"
+                            date="9/01 - 9/17"
+                            tech="(React, Node, Stripe, React Hooks, Firebase, Express, Javascript, HTML, CSS)"
+                            description="A responsive clone of Amazon complete with User Auth and payment handler"
+                            setOpen={() => this.setOpen("Amazon Clone")}
+                        />
+                        <ProjectItem 
+                            title="Edible School Yard Email Templates"
+                            date="9/06 - 9/10"
+                            tech="(HTML, CSS)"
+                            description="Email Templates made for the gardening non-profit Edible School Yard"
+                            setOpen={() => this.setOpen("ESY")}
+                        />
                     </div>
                 </div>
                 <div className="projects__right">
@@ -191,6 +205,40 @@ class Projects extends React.Component {
                                 ]}
                             github="https://github.com/ChrisThompsonTX/AmityLianne.com"
                             livelink="https://www.amitylianne.com/"
+                        />
+                    : null }
+                    {this.state.open === "ESY" ? 
+                        <ProjectContent
+                            title="Edible School Yard Email Templates"
+                            date="9/06 - 9/10"
+                            tech="(HTML, CSS)"
+                            description=""
+                            icon=""
+                            gif=""
+                            keyfeatures={[
+                            ]}
+                            challenges={[
+
+                            ]}
+                            github=""
+                            livelink=""
+                        />
+                    : null }
+                    {this.state.open === "Amazon Clone" ? 
+                        <ProjectContent
+                            title="Amazon Clone"
+                            date="9/01 - 9/17"
+                            tech="(HTML, CSS)"
+                            description=""
+                            icon=""
+                            gif=""
+                            keyfeatures={[
+                            ]}
+                            challenges={[
+
+                            ]}
+                            github=""
+                            livelink=""
                         />
                     : null }
                 </div>
