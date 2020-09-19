@@ -212,7 +212,7 @@ class Projects extends React.Component {
                             title="Edible School Yard Email Templates"
                             date="9/06 - 9/10"
                             tech="(HTML, CSS)"
-                            description=""
+                            description="Email Templates made for the gardening non-profit Edible School Yard"
                             icon=""
                             gif=""
                             keyfeatures={[
@@ -228,8 +228,8 @@ class Projects extends React.Component {
                         <ProjectContent
                             title="Amazon Clone"
                             date="9/01 - 9/17"
-                            tech="(HTML, CSS)"
-                            description=""
+                            tech="(React, Node, Stripe, React Hooks, Firebase, Express, Javascript, HTML, CSS)"
+                            description="A responsive clone of Amazon complete with User Auth and payment handler"
                             icon=""
                             gif=""
                             keyfeatures={[
