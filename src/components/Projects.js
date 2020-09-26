@@ -220,7 +220,7 @@ class Projects extends React.Component {
                             challenges={["E-mail technology is far behind browser technology, after doing a lot of research I came to find email templating only supports html and css", "The subset of CSS supported is limited and has to be inline, most spacing does not work as well as nested divs", "Most of the HTML in these templates had to be set up as a sequence of tables with Mailchimp templating tags and blank table rows for spacing", "Wrapping images became a particular challenge as they required being split up and put into table cells", "One final challenge was that each email client will digest the HTML differently, I had to add code to support the majority of clients"
                             ]}
                             github=""
-                            livelink=""
+                            livelink="http://christhompson.online/ESY/"
                         />
                     : null }
                     {this.state.open === "Amazon Clone" ? 
