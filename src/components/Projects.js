@@ -236,7 +236,7 @@ class Projects extends React.Component {
                             challenges={[
                             ]}
                             github=""
-                            livelink=""
+                            livelink="https://clone-9bf3c.web.app/"
                         />
                     : null }
                 </div>
