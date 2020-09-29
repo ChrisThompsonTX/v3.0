@@ -235,7 +235,7 @@ class Projects extends React.Component {
                             ]}
                             challenges={[
                             ]}
-                            github=""
+                            github="https://github.com/ChrisThompsonTX/amazon-clone"
                             livelink="https://clone-9bf3c.web.app/"
                         />
                     : null }
