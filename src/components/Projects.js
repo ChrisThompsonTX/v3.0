@@ -231,7 +231,7 @@ class Projects extends React.Component {
                             description="A responsive clone of Amazon complete with User Auth and payment handler"
                             icon=""
                             gif=""
-                            keyfeatures={[
+                            keyfeatures={[ ""
                             ]}
                             challenges={[
                             ]}
