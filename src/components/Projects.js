@@ -233,7 +233,7 @@ class Projects extends React.Component {
                             gif=""
                             keyfeatures={[ "", ""
                             ]}
-                            challenges={[ ""
+                            challenges={[ "", ""
                             ]}
                             github="https://github.com/ChrisThompsonTX/amazon-clone"
                             livelink="https://clone-9bf3c.web.app/"
